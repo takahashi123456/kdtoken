@@ -10,7 +10,7 @@ import {
 } from "react-router-dom";
 
 import Top from './rooting/top'
-import List from './rooting/list'
+import List from './list'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
