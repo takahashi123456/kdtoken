@@ -1,32 +1,35 @@
-import React from 'react';
-import Header from './components/header/header';
-import WeatherCheck from './components/apiget';
-import KeibaTB from './components/body/table';
-import { useState, useEffect } from 'react';
-import Container from '@mui/material/Container';
-const theme = {
-  spacing: 8,
-}
+import logo from './logo.svg';
+import './App.css';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Top from './rooting/top';
 
-const sections = [
-  { title: '過去の予想', url: '#' },
-  { title: 'モデル別回収率一覧', url: '#' },
-  { title: '今週のレース予想', url: '#' },
-  { title: 'お知らせ', url: '#' },
-  { title: 'お問合せ', url: '#' },
-
-];
-
-
-export default function Top() {
+function App() {
   return (
-    <div>
-      <Header title="競馬AI" sections={sections} />
-      <Container maxWidth="md">
-        <h1>有馬記念</h1>
-        <KeibaTB container />
-        <WeatherCheck />
-      </Container>
-    </div >
-  )
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit<code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+
+      </header>
+      <div className="body">
+
+      </div>
+    </div>
+  );
 }
+
+export default App;
