@@ -15,13 +15,15 @@ import List from './rooting/list'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter basename={process.env.PUBLIC_URL}>
-    <Routes >
-      <Route path="/" element={<App />} />
-      <Route path="/top" element={<Top />} />
-      <Route path="/list" element={<List />} />
-    </Routes>
-  </BrowserRouter>
+  <React.StrictMode>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <Routes >
+        <Route path="/" element={<App />} />
+        <Route path="/top" element={<Top />} />
+        <Route path="/list" element={<List />} />
+      </Routes>
+    </BrowserRouter>
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
