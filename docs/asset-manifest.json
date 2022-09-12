@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/.github.io/kdtoken/static/css/main.073c9b0a.css",
+    "main.js": "/.github.io/kdtoken/static/js/main.8266d1ed.js",
+    "static/js/787.fc22cbbb.chunk.js": "/.github.io/kdtoken/static/js/787.fc22cbbb.chunk.js",
+    "static/media/logo.svg": "/.github.io/kdtoken/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/.github.io/kdtoken/index.html",
+    "main.073c9b0a.css.map": "/.github.io/kdtoken/static/css/main.073c9b0a.css.map",
+    "main.8266d1ed.js.map": "/.github.io/kdtoken/static/js/main.8266d1ed.js.map",
+    "787.fc22cbbb.chunk.js.map": "/.github.io/kdtoken/static/js/787.fc22cbbb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.8266d1ed.js"
+  ]
+}
