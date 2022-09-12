@@ -16,7 +16,7 @@ import List from './rooting/list'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter >
       <Routes >
         <Route path="/" element={<App />} />
         <Route path="/top" element={<Top />} />
