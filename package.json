@@ -2,7 +2,7 @@
   "name": "kdtoken",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://takahashi123456/.github.io/kdtoken",
+  "homepage": "https://takahashi123456.github.io/kdtoken",
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
