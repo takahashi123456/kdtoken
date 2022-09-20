@@ -11,8 +11,10 @@ const WeatherCheck = () => {
         axios.get(baseURL).then((response) => {
             setPost(response.data);
         });
-
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+
     if (!post) return null;
     const { weather, main, name } = post;
     console.log(post);
