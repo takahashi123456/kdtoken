@@ -2,8 +2,13 @@ import React from 'react';
 import Header from '../components/header/header';
 import WeatherCheck from '../components/apiget';
 import KeibaTB from '../components/body/table';
+import KeibaTB9 from '../components/body/table';
+import KeibaTB10 from '../components/body/table';
+import Keiba12TB from '../components/body/table';
 import { useState, useEffect } from 'react';
 import Container from '@mui/material/Container';
+
+
 const theme = {
     spacing: 8,
 }
@@ -23,8 +28,7 @@ export default function Top() {
         <div>
             <Header title="競馬AI" sections={sections} />
             <Container maxWidth="md">
-                <h1>有馬記念</h1>
-                <KeibaTB container />
+                <KeibaTB />
                 <WeatherCheck />
             </Container>
         </div >
