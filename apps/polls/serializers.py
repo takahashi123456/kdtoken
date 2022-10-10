@@ -4,5 +4,7 @@ from .models import SampleModel
 
 class SampleSerializer(serializers.ModelSerializer):
     class Meta:
-        model = SampleModel                     # 呼び出すモデル
-        fields = ["id","title", "description"]  # API上に表示するモデルのデータ項目
+        model = SampleModel                    # 呼び出すモデル
+        # fields = ["id", "label","score", "horse_number", "favorite", "horse_name", "jockey"]  # API上に表示するモデルのデータ項目
+        fields = ["id", "title", "description"]
+        # fields = '__all__'

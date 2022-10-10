@@ -1,4 +1,4 @@
-from .models import SampleModel                          # モデル呼出
+from .models import SampleModel                         # モデル呼出
 from rest_framework.generics import ListCreateAPIView    # API
 from .serializers import SampleSerializer                # APIで渡すデータをJSON,XML変換
 
