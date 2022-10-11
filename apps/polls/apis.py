@@ -11,6 +11,7 @@ class api(generics.ListCreateAPIView):
 
     # 認証
     permission_classes = []
+    
 
 class DetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = SampleModel.objects.all()
