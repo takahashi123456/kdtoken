@@ -15,3 +15,6 @@ class IndexView(View.TemplateView):
 #     serializer_class = SampleSerializer
 
 # def index():
+
+def squreip(request):
+    pass
