@@ -37,9 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'apps.polls',
+    'apps.polls.apps.ApiConfig',
     'rest_framework',
     'corsheaders',
+    'django_filters',
+    # 'apps.polls.apps.ApiConfig',
 ]
 
 MIDDLEWARE = [
@@ -124,6 +126,11 @@ USE_TZ = True
 # css適応
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+
+# API
+REST_FRAMEWORK = {
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'] #フィルタを追加
+}
 
 # 許可するオリジン
 CORS_ORIGIN_WHITELIST = [
