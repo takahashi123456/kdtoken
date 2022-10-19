@@ -126,9 +126,18 @@ def predict():
   model = load_model(path)
   data_predict = scraping()
 
+  def score(self):
+    if self['prediction_label'] == 0:
+        return 1 - self['prediction_score']
+    elif self['prediction_label'] == 1:
+        return self['prediction_score']
+    else :
+        return str("none")
+
   result = predict_model(model, data = data_predict)
 
   result_d = result.loc[:, ['horse_number', 'prediction_label', 'prediction_score']].sort_values('horse_number').reset_index(drop=True)
+  result_d['score'] = result_d.apply(score, axis=1)
 
   print(result_d)
 
@@ -137,5 +146,5 @@ def start():
   scheduler = BackgroundScheduler()
   # scheduler.add_job(predict, 'interval', seconds=10) # 処理時間の指定
   # scheduler.add_job(scraping, 'cron', hour=22, day_of_week='sat,sun') # 土曜と日曜の22時になると実行
-  scheduler.add_job(predict, 'cron', minute = 46)
+  scheduler.add_job(predict, 'cron', minute = 57)
   scheduler.start()
