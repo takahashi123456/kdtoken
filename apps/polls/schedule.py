@@ -4,6 +4,7 @@ from apscheduler.schedulers.background import BackgroundScheduler
 
 from bs4 import BeautifulSoup
 from googletrans import Translator
+from pycaret.classification import *
 from selenium import webdriver
 import chromedriver_binary
 import requests
@@ -16,7 +17,7 @@ import time
 
 
 def scraping(): # スクレイピング処理
-  print('start')  # 動作確認用
+  # print('start')  # 動作確認用
     # 設定 #
 
   year =2022
@@ -114,13 +115,27 @@ def scraping(): # スクレイピング処理
 
   data_list = data_list.reindex(columns=['race_id', 'bracket_number', 'horse_number', 'horse_name', 'gender', 'age', 'penalty', 'jockey', 'trainer', 'horse_weight', 'weight_cycling', 'odds', 'favorite', 'racecourse', 'track_surface', 'circumference', 'turn', 'wether', 'track_condition'])
 
-  data_list.to_csv('[PATHを指定]' + str(year) + str(keibajyou_list[keibajyou]) + str(kai_list[kai]) + str(nichime_list[nichime]) + str(race_list[race]) + '.csv')
+  # data_list.to_csv('[PATHを指定]' + str(year) + str(keibajyou_list[keibajyou]) + str(kai_list[kai]) + str(nichime_list[nichime]) + str(race_list[race]) + '.csv')
+  # /Users/nagatadaiki/Dropbox/My Mac (永田のMacBook Air)/Desktop/アプリ開発
+  # print(data_list)
+  return data_list
 
-  print(data_list)
+# 予測
+def predict():
+  path = os.path.dirname(__file__) + '/predict_models/2021_lr'
+  model = load_model(path)
+  data_predict = scraping()
 
+  result = predict_model(model, data = data_predict)
+
+  result_d = result.loc[:, ['horse_number', 'prediction_label', 'prediction_score']].sort_values('horse_number').reset_index(drop=True)
+
+  print(result_d)
+
+# 定期実行処理
 def start():
   scheduler = BackgroundScheduler()
-  # scheduler.add_job(scraping, 'interval', seconds=60) # 処理時間の指定
+  # scheduler.add_job(predict, 'interval', seconds=10) # 処理時間の指定
   # scheduler.add_job(scraping, 'cron', hour=22, day_of_week='sat,sun') # 土曜と日曜の22時になると実行
-  scheduler.add_job(scraping, 'cron', minute = 48)
+  scheduler.add_job(predict, 'cron', minute = 46)
   scheduler.start()
