@@ -52,7 +52,7 @@ const c_label = Data4["Label"]
 function createData(name, jockey, calories, fat, carbs, protein, track, label) {
     return { name, jockey, calories, fat, carbs, protein, track, label };
 }
-
+//後でForで簡単にみやすくする
 const rows = [];
 for (let i = 0; i < 16; i++) {
     const a = createData(name[i], jockey[i], score[i], favorite[i], horsenumber[i], age[i], track[i], label[i]);

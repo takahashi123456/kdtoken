@@ -12,7 +12,7 @@ function Header(props) {
     return (
         <React.Fragment>
             <Toolbar sx={{ borderBottom: 1, borderColor: 'divider' }}>
-                <Button size="small">競馬AI</Button>
+                <Button size="small" href="/">競馬AI</Button>
                 <Typography
                     component="h2"
                     variant="h5"
