@@ -15,7 +15,7 @@ class Migration(migrations.Migration):
             name='HorseModel',
             fields=[
                 ('race_id', models.IntegerField(primary_key=True, serialize=False)),
-                ('score', models.FloatField(blank=True, null=True)),
+                ('score', models.TextField()),
             ],
         ),
         migrations.CreateModel(

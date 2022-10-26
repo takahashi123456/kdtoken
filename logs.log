@@ -1074,3 +1074,1093 @@ pickle: {'deps_info': {'pip': '21.1.3', 'setuptools': '57.4.0', 'pycaret': '3.0.
 'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
 2022-10-21 11:34:40,909:WARNING:
 'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 13:15:29,893:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:15:29,893:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:15:29,893:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:15:29,893:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:15:30,812:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 13:15:39,701:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:15:39,701:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:15:39,701:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:15:39,701:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:15:40,179:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 13:15:42,950:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:15:42,951:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:15:42,951:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:15:42,951:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:15:43,432:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 13:16:00,007:INFO:Initializing load_model()
+2022-10-21 13:16:00,009:INFO:load_model(model_name=/Users/nagatadaiki/Dropbox/My Mac (永田のMacBook Air)/Desktop/アプリ開発/チーム開発/mysite/apps/polls/predict_models/2021_lr, platform=None, authentication=None, verbose=True)
+2022-10-21 13:16:00,014:INFO:Initializing load_model()
+2022-10-21 13:16:00,015:INFO:load_model(model_name=/Users/nagatadaiki/Dropbox/My Mac (永田のMacBook Air)/Desktop/アプリ開発/チーム開発/mysite/apps/polls/predict_models/2021_lr, platform=None, authentication=None, verbose=True)
+2022-10-21 13:16:00,029:WARNING:/Users/nagatadaiki/opt/anaconda3/envs/keibaAPI/lib/python3.7/site-packages/pycaret/internal/pipeline.py:117: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.2.2', 'setuptools': '63.4.1', 'pycaret': '3.0.0rc4', 'IPython': '7.34.0', 'ipywidgets': '8.0.2', 'tqdm': '4.64.1', 'numpy': '1.21.5', 'pandas': '1.3.5', 'jinja2': '3.1.2', 'scipy': '1.7.3', 'joblib': '1.2.0', 'sklearn': '1.0.2', 'pyod': '1.0.5', 'imblearn': '0.9.0', 'category_encoders': '2.5.1.post0', 'lightgbm': '3.3.3', 'numba': '0.55.2', 'requests': '2.28.1', 'matplotlib': '3.5.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.10.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.2', 'sktime': '0.13.4', 'tbats': '1.1.1', 'pmdarima': '1.8.5', 'psutil': '5.9.3'}, 'python': {'version': '3.7.13', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '21.1.3', 'setuptools': '57.4.0', 'pycaret': '3.0.0rc4', 'IPython': '7.9.0', 'ipywidgets': '7.7.1', 'tqdm': '4.64.1', 'numpy': '1.21.6', 'pandas': '1.3.5', 'jinja2': '3.1.2', 'scipy': '1.7.3', 'joblib': '1.1.1', 'sklearn': '1.0.2', 'pyod': '1.0.5', 'imblearn': '0.8.1', 'category_encoders': '2.5.1.post0', 'lightgbm': '3.3.3', 'numba': '0.55.2', 'requests': '2.28.1', 'matplotlib': '3.5.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.5.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.2', 'sktime': '0.13.4', 'tbats': '1.1.1', 'pmdarima': '1.8.5', 'psutil': '5.9.2'}, 'python': {'version': '3.7.14', 'machine': 'x86_64'}}
+  self._pycaret_versions, pickle_versions
+
+2022-10-21 13:16:00,029:WARNING:/Users/nagatadaiki/opt/anaconda3/envs/keibaAPI/lib/python3.7/site-packages/pycaret/internal/pipeline.py:117: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.2.2', 'setuptools': '63.4.1', 'pycaret': '3.0.0rc4', 'IPython': '7.34.0', 'ipywidgets': '8.0.2', 'tqdm': '4.64.1', 'numpy': '1.21.5', 'pandas': '1.3.5', 'jinja2': '3.1.2', 'scipy': '1.7.3', 'joblib': '1.2.0', 'sklearn': '1.0.2', 'pyod': '1.0.5', 'imblearn': '0.9.0', 'category_encoders': '2.5.1.post0', 'lightgbm': '3.3.3', 'numba': '0.55.2', 'requests': '2.28.1', 'matplotlib': '3.5.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.10.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.2', 'sktime': '0.13.4', 'tbats': '1.1.1', 'pmdarima': '1.8.5', 'psutil': '5.9.3'}, 'python': {'version': '3.7.13', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '21.1.3', 'setuptools': '57.4.0', 'pycaret': '3.0.0rc4', 'IPython': '7.9.0', 'ipywidgets': '7.7.1', 'tqdm': '4.64.1', 'numpy': '1.21.6', 'pandas': '1.3.5', 'jinja2': '3.1.2', 'scipy': '1.7.3', 'joblib': '1.1.1', 'sklearn': '1.0.2', 'pyod': '1.0.5', 'imblearn': '0.8.1', 'category_encoders': '2.5.1.post0', 'lightgbm': '3.3.3', 'numba': '0.55.2', 'requests': '2.28.1', 'matplotlib': '3.5.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.5.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.2', 'sktime': '0.13.4', 'tbats': '1.1.1', 'pmdarima': '1.8.5', 'psutil': '5.9.2'}, 'python': {'version': '3.7.14', 'machine': 'x86_64'}}
+  self._pycaret_versions, pickle_versions
+
+2022-10-21 13:16:47,770:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:16:47,770:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:16:47,770:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:16:47,770:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:16:48,315:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 13:16:52,228:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:16:52,229:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:16:52,229:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:16:52,229:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:16:56,165:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:16:56,165:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:16:56,165:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:16:56,165:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:16:56,641:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 13:17:00,008:INFO:Initializing load_model()
+2022-10-21 13:17:00,019:INFO:load_model(model_name=/Users/nagatadaiki/Dropbox/My Mac (永田のMacBook Air)/Desktop/アプリ開発/チーム開発/mysite/apps/polls/predict_models/2021_lr, platform=None, authentication=None, verbose=True)
+2022-10-21 13:17:00,028:WARNING:/Users/nagatadaiki/opt/anaconda3/envs/keibaAPI/lib/python3.7/site-packages/pycaret/internal/pipeline.py:117: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.2.2', 'setuptools': '63.4.1', 'pycaret': '3.0.0rc4', 'IPython': '7.34.0', 'ipywidgets': '8.0.2', 'tqdm': '4.64.1', 'numpy': '1.21.5', 'pandas': '1.3.5', 'jinja2': '3.1.2', 'scipy': '1.7.3', 'joblib': '1.2.0', 'sklearn': '1.0.2', 'pyod': '1.0.5', 'imblearn': '0.9.0', 'category_encoders': '2.5.1.post0', 'lightgbm': '3.3.3', 'numba': '0.55.2', 'requests': '2.28.1', 'matplotlib': '3.5.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.10.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.2', 'sktime': '0.13.4', 'tbats': '1.1.1', 'pmdarima': '1.8.5', 'psutil': '5.9.3'}, 'python': {'version': '3.7.13', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '21.1.3', 'setuptools': '57.4.0', 'pycaret': '3.0.0rc4', 'IPython': '7.9.0', 'ipywidgets': '7.7.1', 'tqdm': '4.64.1', 'numpy': '1.21.6', 'pandas': '1.3.5', 'jinja2': '3.1.2', 'scipy': '1.7.3', 'joblib': '1.1.1', 'sklearn': '1.0.2', 'pyod': '1.0.5', 'imblearn': '0.8.1', 'category_encoders': '2.5.1.post0', 'lightgbm': '3.3.3', 'numba': '0.55.2', 'requests': '2.28.1', 'matplotlib': '3.5.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.5.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.2', 'sktime': '0.13.4', 'tbats': '1.1.1', 'pmdarima': '1.8.5', 'psutil': '5.9.2'}, 'python': {'version': '3.7.14', 'machine': 'x86_64'}}
+  self._pycaret_versions, pickle_versions
+
+2022-10-21 13:17:00,481:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:17:00,481:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:17:00,481:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:17:00,481:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:17:00,951:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 13:17:53,483:INFO:Initializing predict_model()
+2022-10-21 13:17:53,487:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7f9d206c25d0>, estimator=Pipeline(memory=Memory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['bracket_number', 'horse_number',
+                                             'penalty', 'favorite', 'age',
+                                             'horse_weight', 'weight_cycling',
+                                             'circumference'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['horse_name', 'jockey', 'trainer',
+                                             'gender', 'turn', 'wether',
+                                             'ra...
+                 TransformerWrapper(include=['horse_name', 'jockey', 'trainer',
+                                             'racecourse'],
+                                    transformer=LeaveOneOutEncoder(cols=['horse_name',
+                                                                         'jockey',
+                                                                         'trainer',
+                                                                         'racecourse'],
+                                                                   handle_missing='return_nan',
+                                                                   random_state=123))),
+                ('low_variance',
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0))),
+                ('trained_model',
+                 LogisticRegression(max_iter=1000, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, drift_report=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x7f9d210efa70>)
+2022-10-21 13:17:53,487:INFO:Checking exceptions
+2022-10-21 13:17:53,487:INFO:Preloading libraries
+2022-10-21 13:17:53,487:INFO:Set up data.
+2022-10-21 13:17:53,492:INFO:Set up index.
+2022-10-21 13:19:05,017:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:19:05,017:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:19:05,017:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:19:05,017:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:19:05,829:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 13:20:32,358:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:20:32,358:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:20:32,358:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:20:32,358:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:20:32,948:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 13:20:49,651:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:20:49,651:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:20:49,651:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:20:49,651:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:20:50,192:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 13:20:54,157:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:20:54,157:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:20:54,157:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:20:54,158:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 13:20:54,640:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 14:06:24,321:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:06:24,322:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:06:24,322:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:06:24,322:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:06:25,232:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 14:06:36,213:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:06:36,214:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:06:36,214:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:06:36,214:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:06:36,686:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 14:07:02,360:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:07:02,360:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:07:02,360:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:07:02,360:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:07:03,211:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 14:08:58,631:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:08:58,631:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:08:58,631:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:08:58,631:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:08:59,453:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 14:09:20,043:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:09:20,043:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:09:20,043:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:09:20,043:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:09:20,883:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 14:09:43,358:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:09:43,358:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:09:43,358:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:09:43,358:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:09:43,872:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 14:09:47,783:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:09:47,783:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:09:47,783:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:09:47,783:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:09:48,264:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 14:18:23,668:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:18:23,668:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:18:23,668:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:18:23,668:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:18:24,485:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 14:18:28,622:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:18:28,622:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:18:28,622:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:18:28,622:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:18:29,107:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 14:20:06,881:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:20:06,881:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:20:06,881:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:20:06,881:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:20:07,408:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 14:20:25,138:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:20:25,138:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:20:25,138:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:20:25,138:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:20:25,611:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 14:21:00,006:INFO:Initializing load_model()
+2022-10-21 14:21:00,008:INFO:load_model(model_name=/Users/nagatadaiki/Dropbox/My Mac (永田のMacBook Air)/Desktop/アプリ開発/チーム開発/mysite/apps/polls/predict_models/2021_lr, platform=None, authentication=None, verbose=True)
+2022-10-21 14:21:00,031:WARNING:/Users/nagatadaiki/opt/anaconda3/envs/keibaAPI/lib/python3.7/site-packages/pycaret/internal/pipeline.py:117: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.2.2', 'setuptools': '63.4.1', 'pycaret': '3.0.0rc4', 'IPython': '7.34.0', 'ipywidgets': '8.0.2', 'tqdm': '4.64.1', 'numpy': '1.21.5', 'pandas': '1.3.5', 'jinja2': '3.1.2', 'scipy': '1.7.3', 'joblib': '1.2.0', 'sklearn': '1.0.2', 'pyod': '1.0.5', 'imblearn': '0.9.0', 'category_encoders': '2.5.1.post0', 'lightgbm': '3.3.3', 'numba': '0.55.2', 'requests': '2.28.1', 'matplotlib': '3.5.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.10.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.2', 'sktime': '0.13.4', 'tbats': '1.1.1', 'pmdarima': '1.8.5', 'psutil': '5.9.3'}, 'python': {'version': '3.7.13', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '21.1.3', 'setuptools': '57.4.0', 'pycaret': '3.0.0rc4', 'IPython': '7.9.0', 'ipywidgets': '7.7.1', 'tqdm': '4.64.1', 'numpy': '1.21.6', 'pandas': '1.3.5', 'jinja2': '3.1.2', 'scipy': '1.7.3', 'joblib': '1.1.1', 'sklearn': '1.0.2', 'pyod': '1.0.5', 'imblearn': '0.8.1', 'category_encoders': '2.5.1.post0', 'lightgbm': '3.3.3', 'numba': '0.55.2', 'requests': '2.28.1', 'matplotlib': '3.5.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.5.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.2', 'sktime': '0.13.4', 'tbats': '1.1.1', 'pmdarima': '1.8.5', 'psutil': '5.9.2'}, 'python': {'version': '3.7.14', 'machine': 'x86_64'}}
+  self._pycaret_versions, pickle_versions
+
+2022-10-21 14:21:57,790:INFO:Initializing predict_model()
+2022-10-21 14:21:57,790:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7ff3588243d0>, estimator=Pipeline(memory=Memory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['bracket_number', 'horse_number',
+                                             'penalty', 'favorite', 'age',
+                                             'horse_weight', 'weight_cycling',
+                                             'circumference'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['horse_name', 'jockey', 'trainer',
+                                             'gender', 'turn', 'wether',
+                                             'ra...
+                 TransformerWrapper(include=['horse_name', 'jockey', 'trainer',
+                                             'racecourse'],
+                                    transformer=LeaveOneOutEncoder(cols=['horse_name',
+                                                                         'jockey',
+                                                                         'trainer',
+                                                                         'racecourse'],
+                                                                   handle_missing='return_nan',
+                                                                   random_state=123))),
+                ('low_variance',
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0))),
+                ('trained_model',
+                 LogisticRegression(max_iter=1000, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, drift_report=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x7ff328b1be60>)
+2022-10-21 14:21:57,790:INFO:Checking exceptions
+2022-10-21 14:21:57,790:INFO:Preloading libraries
+2022-10-21 14:21:57,791:INFO:Set up data.
+2022-10-21 14:21:57,798:INFO:Set up index.
+2022-10-21 14:39:25,803:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:39:25,804:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:39:25,804:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:39:25,804:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:39:26,722:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 14:39:29,844:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:39:29,844:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:39:29,844:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:39:29,844:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:39:30,322:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 14:40:00,005:INFO:Initializing load_model()
+2022-10-21 14:40:00,006:INFO:load_model(model_name=/Users/nagatadaiki/Dropbox/My Mac (永田のMacBook Air)/Desktop/アプリ開発/チーム開発/mysite/apps/polls/predict_models/2021_lr, platform=None, authentication=None, verbose=True)
+2022-10-21 14:40:00,010:INFO:Initializing load_model()
+2022-10-21 14:40:00,011:INFO:load_model(model_name=/Users/nagatadaiki/Dropbox/My Mac (永田のMacBook Air)/Desktop/アプリ開発/チーム開発/mysite/apps/polls/predict_models/2021_lr, platform=None, authentication=None, verbose=True)
+2022-10-21 14:40:00,025:WARNING:/Users/nagatadaiki/opt/anaconda3/envs/keibaAPI/lib/python3.7/site-packages/pycaret/internal/pipeline.py:117: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.2.2', 'setuptools': '63.4.1', 'pycaret': '3.0.0rc4', 'IPython': '7.34.0', 'ipywidgets': '8.0.2', 'tqdm': '4.64.1', 'numpy': '1.21.5', 'pandas': '1.3.5', 'jinja2': '3.1.2', 'scipy': '1.7.3', 'joblib': '1.2.0', 'sklearn': '1.0.2', 'pyod': '1.0.5', 'imblearn': '0.9.0', 'category_encoders': '2.5.1.post0', 'lightgbm': '3.3.3', 'numba': '0.55.2', 'requests': '2.28.1', 'matplotlib': '3.5.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.10.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.2', 'sktime': '0.13.4', 'tbats': '1.1.1', 'pmdarima': '1.8.5', 'psutil': '5.9.3'}, 'python': {'version': '3.7.13', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '21.1.3', 'setuptools': '57.4.0', 'pycaret': '3.0.0rc4', 'IPython': '7.9.0', 'ipywidgets': '7.7.1', 'tqdm': '4.64.1', 'numpy': '1.21.6', 'pandas': '1.3.5', 'jinja2': '3.1.2', 'scipy': '1.7.3', 'joblib': '1.1.1', 'sklearn': '1.0.2', 'pyod': '1.0.5', 'imblearn': '0.8.1', 'category_encoders': '2.5.1.post0', 'lightgbm': '3.3.3', 'numba': '0.55.2', 'requests': '2.28.1', 'matplotlib': '3.5.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.5.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.2', 'sktime': '0.13.4', 'tbats': '1.1.1', 'pmdarima': '1.8.5', 'psutil': '5.9.2'}, 'python': {'version': '3.7.14', 'machine': 'x86_64'}}
+  self._pycaret_versions, pickle_versions
+
+2022-10-21 14:40:00,031:WARNING:/Users/nagatadaiki/opt/anaconda3/envs/keibaAPI/lib/python3.7/site-packages/pycaret/internal/pipeline.py:117: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.2.2', 'setuptools': '63.4.1', 'pycaret': '3.0.0rc4', 'IPython': '7.34.0', 'ipywidgets': '8.0.2', 'tqdm': '4.64.1', 'numpy': '1.21.5', 'pandas': '1.3.5', 'jinja2': '3.1.2', 'scipy': '1.7.3', 'joblib': '1.2.0', 'sklearn': '1.0.2', 'pyod': '1.0.5', 'imblearn': '0.9.0', 'category_encoders': '2.5.1.post0', 'lightgbm': '3.3.3', 'numba': '0.55.2', 'requests': '2.28.1', 'matplotlib': '3.5.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.10.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.2', 'sktime': '0.13.4', 'tbats': '1.1.1', 'pmdarima': '1.8.5', 'psutil': '5.9.3'}, 'python': {'version': '3.7.13', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '21.1.3', 'setuptools': '57.4.0', 'pycaret': '3.0.0rc4', 'IPython': '7.9.0', 'ipywidgets': '7.7.1', 'tqdm': '4.64.1', 'numpy': '1.21.6', 'pandas': '1.3.5', 'jinja2': '3.1.2', 'scipy': '1.7.3', 'joblib': '1.1.1', 'sklearn': '1.0.2', 'pyod': '1.0.5', 'imblearn': '0.8.1', 'category_encoders': '2.5.1.post0', 'lightgbm': '3.3.3', 'numba': '0.55.2', 'requests': '2.28.1', 'matplotlib': '3.5.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.5.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.2', 'sktime': '0.13.4', 'tbats': '1.1.1', 'pmdarima': '1.8.5', 'psutil': '5.9.2'}, 'python': {'version': '3.7.14', 'machine': 'x86_64'}}
+  self._pycaret_versions, pickle_versions
+
+2022-10-21 14:41:04,471:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:41:04,471:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:41:04,471:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:41:04,471:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:41:05,012:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 14:41:08,368:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:41:08,368:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:41:08,368:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:41:08,368:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:41:08,838:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 14:45:10,210:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:45:10,210:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:45:10,210:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:45:10,210:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:45:10,751:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 14:46:00,014:INFO:Initializing load_model()
+2022-10-21 14:46:00,017:INFO:load_model(model_name=/Users/nagatadaiki/Dropbox/My Mac (永田のMacBook Air)/Desktop/アプリ開発/チーム開発/mysite/apps/polls/predict_models/2021_lr, platform=None, authentication=None, verbose=True)
+2022-10-21 14:46:00,037:WARNING:/Users/nagatadaiki/opt/anaconda3/envs/keibaAPI/lib/python3.7/site-packages/pycaret/internal/pipeline.py:117: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.2.2', 'setuptools': '63.4.1', 'pycaret': '3.0.0rc4', 'IPython': '7.34.0', 'ipywidgets': '8.0.2', 'tqdm': '4.64.1', 'numpy': '1.21.5', 'pandas': '1.3.5', 'jinja2': '3.1.2', 'scipy': '1.7.3', 'joblib': '1.2.0', 'sklearn': '1.0.2', 'pyod': '1.0.5', 'imblearn': '0.9.0', 'category_encoders': '2.5.1.post0', 'lightgbm': '3.3.3', 'numba': '0.55.2', 'requests': '2.28.1', 'matplotlib': '3.5.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.10.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.2', 'sktime': '0.13.4', 'tbats': '1.1.1', 'pmdarima': '1.8.5', 'psutil': '5.9.3'}, 'python': {'version': '3.7.13', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '21.1.3', 'setuptools': '57.4.0', 'pycaret': '3.0.0rc4', 'IPython': '7.9.0', 'ipywidgets': '7.7.1', 'tqdm': '4.64.1', 'numpy': '1.21.6', 'pandas': '1.3.5', 'jinja2': '3.1.2', 'scipy': '1.7.3', 'joblib': '1.1.1', 'sklearn': '1.0.2', 'pyod': '1.0.5', 'imblearn': '0.8.1', 'category_encoders': '2.5.1.post0', 'lightgbm': '3.3.3', 'numba': '0.55.2', 'requests': '2.28.1', 'matplotlib': '3.5.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.5.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.2', 'sktime': '0.13.4', 'tbats': '1.1.1', 'pmdarima': '1.8.5', 'psutil': '5.9.2'}, 'python': {'version': '3.7.14', 'machine': 'x86_64'}}
+  self._pycaret_versions, pickle_versions
+
+2022-10-21 14:46:54,328:INFO:Initializing predict_model()
+2022-10-21 14:46:54,328:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7f9464603c50>, estimator=Pipeline(memory=Memory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['bracket_number', 'horse_number',
+                                             'penalty', 'favorite', 'age',
+                                             'horse_weight', 'weight_cycling',
+                                             'circumference'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['horse_name', 'jockey', 'trainer',
+                                             'gender', 'turn', 'wether',
+                                             'ra...
+                 TransformerWrapper(include=['horse_name', 'jockey', 'trainer',
+                                             'racecourse'],
+                                    transformer=LeaveOneOutEncoder(cols=['horse_name',
+                                                                         'jockey',
+                                                                         'trainer',
+                                                                         'racecourse'],
+                                                                   handle_missing='return_nan',
+                                                                   random_state=123))),
+                ('low_variance',
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0))),
+                ('trained_model',
+                 LogisticRegression(max_iter=1000, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, drift_report=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x7f94646dd0e0>)
+2022-10-21 14:46:54,328:INFO:Checking exceptions
+2022-10-21 14:46:54,328:INFO:Preloading libraries
+2022-10-21 14:46:54,329:INFO:Set up data.
+2022-10-21 14:46:54,333:INFO:Set up index.
+2022-10-21 14:48:32,643:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:48:32,643:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:48:32,643:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:48:32,643:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:48:33,247:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 14:48:36,831:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:48:36,831:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:48:36,831:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:48:36,831:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:48:37,331:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 14:48:42,601:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:48:42,601:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:48:42,601:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:48:42,601:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:48:43,074:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 14:49:12,753:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:49:12,753:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:49:12,753:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:49:12,753:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:49:13,276:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 14:50:00,005:INFO:Initializing load_model()
+2022-10-21 14:50:00,007:INFO:load_model(model_name=/Users/nagatadaiki/Dropbox/My Mac (永田のMacBook Air)/Desktop/アプリ開発/チーム開発/mysite/apps/polls/predict_models/2021_lr, platform=None, authentication=None, verbose=True)
+2022-10-21 14:50:00,024:WARNING:/Users/nagatadaiki/opt/anaconda3/envs/keibaAPI/lib/python3.7/site-packages/pycaret/internal/pipeline.py:117: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.2.2', 'setuptools': '63.4.1', 'pycaret': '3.0.0rc4', 'IPython': '7.34.0', 'ipywidgets': '8.0.2', 'tqdm': '4.64.1', 'numpy': '1.21.5', 'pandas': '1.3.5', 'jinja2': '3.1.2', 'scipy': '1.7.3', 'joblib': '1.2.0', 'sklearn': '1.0.2', 'pyod': '1.0.5', 'imblearn': '0.9.0', 'category_encoders': '2.5.1.post0', 'lightgbm': '3.3.3', 'numba': '0.55.2', 'requests': '2.28.1', 'matplotlib': '3.5.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.10.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.2', 'sktime': '0.13.4', 'tbats': '1.1.1', 'pmdarima': '1.8.5', 'psutil': '5.9.3'}, 'python': {'version': '3.7.13', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '21.1.3', 'setuptools': '57.4.0', 'pycaret': '3.0.0rc4', 'IPython': '7.9.0', 'ipywidgets': '7.7.1', 'tqdm': '4.64.1', 'numpy': '1.21.6', 'pandas': '1.3.5', 'jinja2': '3.1.2', 'scipy': '1.7.3', 'joblib': '1.1.1', 'sklearn': '1.0.2', 'pyod': '1.0.5', 'imblearn': '0.8.1', 'category_encoders': '2.5.1.post0', 'lightgbm': '3.3.3', 'numba': '0.55.2', 'requests': '2.28.1', 'matplotlib': '3.5.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.5.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.2', 'sktime': '0.13.4', 'tbats': '1.1.1', 'pmdarima': '1.8.5', 'psutil': '5.9.2'}, 'python': {'version': '3.7.14', 'machine': 'x86_64'}}
+  self._pycaret_versions, pickle_versions
+
+2022-10-21 14:50:59,159:INFO:Initializing predict_model()
+2022-10-21 14:50:59,160:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fbbbc7aed10>, estimator=Pipeline(memory=Memory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['bracket_number', 'horse_number',
+                                             'penalty', 'favorite', 'age',
+                                             'horse_weight', 'weight_cycling',
+                                             'circumference'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['horse_name', 'jockey', 'trainer',
+                                             'gender', 'turn', 'wether',
+                                             'ra...
+                 TransformerWrapper(include=['horse_name', 'jockey', 'trainer',
+                                             'racecourse'],
+                                    transformer=LeaveOneOutEncoder(cols=['horse_name',
+                                                                         'jockey',
+                                                                         'trainer',
+                                                                         'racecourse'],
+                                                                   handle_missing='return_nan',
+                                                                   random_state=123))),
+                ('low_variance',
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0))),
+                ('trained_model',
+                 LogisticRegression(max_iter=1000, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, drift_report=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x7fbbcc6faef0>)
+2022-10-21 14:50:59,160:INFO:Checking exceptions
+2022-10-21 14:50:59,160:INFO:Preloading libraries
+2022-10-21 14:50:59,160:INFO:Set up data.
+2022-10-21 14:50:59,167:INFO:Set up index.
+2022-10-21 14:55:18,320:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:55:18,320:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:55:18,320:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:55:18,320:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:55:19,175:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 14:55:44,559:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:55:44,559:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:55:44,559:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:55:44,559:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:55:45,048:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 14:55:48,430:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:55:48,430:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:55:48,430:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:55:48,430:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:55:48,936:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 14:56:00,008:INFO:Initializing load_model()
+2022-10-21 14:56:00,009:INFO:load_model(model_name=/Users/nagatadaiki/Dropbox/My Mac (永田のMacBook Air)/Desktop/アプリ開発/チーム開発/mysite/apps/polls/predict_models/2021_lr, platform=None, authentication=None, verbose=True)
+2022-10-21 14:56:00,015:INFO:Initializing load_model()
+2022-10-21 14:56:00,017:INFO:load_model(model_name=/Users/nagatadaiki/Dropbox/My Mac (永田のMacBook Air)/Desktop/アプリ開発/チーム開発/mysite/apps/polls/predict_models/2021_lr, platform=None, authentication=None, verbose=True)
+2022-10-21 14:56:00,030:WARNING:/Users/nagatadaiki/opt/anaconda3/envs/keibaAPI/lib/python3.7/site-packages/pycaret/internal/pipeline.py:117: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.2.2', 'setuptools': '63.4.1', 'pycaret': '3.0.0rc4', 'IPython': '7.34.0', 'ipywidgets': '8.0.2', 'tqdm': '4.64.1', 'numpy': '1.21.5', 'pandas': '1.3.5', 'jinja2': '3.1.2', 'scipy': '1.7.3', 'joblib': '1.2.0', 'sklearn': '1.0.2', 'pyod': '1.0.5', 'imblearn': '0.9.0', 'category_encoders': '2.5.1.post0', 'lightgbm': '3.3.3', 'numba': '0.55.2', 'requests': '2.28.1', 'matplotlib': '3.5.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.10.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.2', 'sktime': '0.13.4', 'tbats': '1.1.1', 'pmdarima': '1.8.5', 'psutil': '5.9.3'}, 'python': {'version': '3.7.13', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '21.1.3', 'setuptools': '57.4.0', 'pycaret': '3.0.0rc4', 'IPython': '7.9.0', 'ipywidgets': '7.7.1', 'tqdm': '4.64.1', 'numpy': '1.21.6', 'pandas': '1.3.5', 'jinja2': '3.1.2', 'scipy': '1.7.3', 'joblib': '1.1.1', 'sklearn': '1.0.2', 'pyod': '1.0.5', 'imblearn': '0.8.1', 'category_encoders': '2.5.1.post0', 'lightgbm': '3.3.3', 'numba': '0.55.2', 'requests': '2.28.1', 'matplotlib': '3.5.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.5.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.2', 'sktime': '0.13.4', 'tbats': '1.1.1', 'pmdarima': '1.8.5', 'psutil': '5.9.2'}, 'python': {'version': '3.7.14', 'machine': 'x86_64'}}
+  self._pycaret_versions, pickle_versions
+
+2022-10-21 14:56:00,039:WARNING:/Users/nagatadaiki/opt/anaconda3/envs/keibaAPI/lib/python3.7/site-packages/pycaret/internal/pipeline.py:117: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.2.2', 'setuptools': '63.4.1', 'pycaret': '3.0.0rc4', 'IPython': '7.34.0', 'ipywidgets': '8.0.2', 'tqdm': '4.64.1', 'numpy': '1.21.5', 'pandas': '1.3.5', 'jinja2': '3.1.2', 'scipy': '1.7.3', 'joblib': '1.2.0', 'sklearn': '1.0.2', 'pyod': '1.0.5', 'imblearn': '0.9.0', 'category_encoders': '2.5.1.post0', 'lightgbm': '3.3.3', 'numba': '0.55.2', 'requests': '2.28.1', 'matplotlib': '3.5.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.10.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.2', 'sktime': '0.13.4', 'tbats': '1.1.1', 'pmdarima': '1.8.5', 'psutil': '5.9.3'}, 'python': {'version': '3.7.13', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '21.1.3', 'setuptools': '57.4.0', 'pycaret': '3.0.0rc4', 'IPython': '7.9.0', 'ipywidgets': '7.7.1', 'tqdm': '4.64.1', 'numpy': '1.21.6', 'pandas': '1.3.5', 'jinja2': '3.1.2', 'scipy': '1.7.3', 'joblib': '1.1.1', 'sklearn': '1.0.2', 'pyod': '1.0.5', 'imblearn': '0.8.1', 'category_encoders': '2.5.1.post0', 'lightgbm': '3.3.3', 'numba': '0.55.2', 'requests': '2.28.1', 'matplotlib': '3.5.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.5.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.2', 'sktime': '0.13.4', 'tbats': '1.1.1', 'pmdarima': '1.8.5', 'psutil': '5.9.2'}, 'python': {'version': '3.7.14', 'machine': 'x86_64'}}
+  self._pycaret_versions, pickle_versions
+
+2022-10-21 14:57:03,329:INFO:Initializing predict_model()
+2022-10-21 14:57:03,330:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fc6594c3890>, estimator=Pipeline(memory=Memory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['bracket_number', 'horse_number',
+                                             'penalty', 'favorite', 'age',
+                                             'horse_weight', 'weight_cycling',
+                                             'circumference'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['horse_name', 'jockey', 'trainer',
+                                             'gender', 'turn', 'wether',
+                                             'ra...
+                 TransformerWrapper(include=['horse_name', 'jockey', 'trainer',
+                                             'racecourse'],
+                                    transformer=LeaveOneOutEncoder(cols=['horse_name',
+                                                                         'jockey',
+                                                                         'trainer',
+                                                                         'racecourse'],
+                                                                   handle_missing='return_nan',
+                                                                   random_state=123))),
+                ('low_variance',
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0))),
+                ('trained_model',
+                 LogisticRegression(max_iter=1000, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, drift_report=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x7fc659334f80>)
+2022-10-21 14:57:03,330:INFO:Checking exceptions
+2022-10-21 14:57:03,330:INFO:Preloading libraries
+2022-10-21 14:57:03,331:INFO:Set up data.
+2022-10-21 14:57:03,336:INFO:Set up index.
+2022-10-21 14:57:03,810:INFO:Initializing predict_model()
+2022-10-21 14:57:03,810:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fd596d84fd0>, estimator=Pipeline(memory=Memory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['bracket_number', 'horse_number',
+                                             'penalty', 'favorite', 'age',
+                                             'horse_weight', 'weight_cycling',
+                                             'circumference'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['horse_name', 'jockey', 'trainer',
+                                             'gender', 'turn', 'wether',
+                                             'ra...
+                 TransformerWrapper(include=['horse_name', 'jockey', 'trainer',
+                                             'racecourse'],
+                                    transformer=LeaveOneOutEncoder(cols=['horse_name',
+                                                                         'jockey',
+                                                                         'trainer',
+                                                                         'racecourse'],
+                                                                   handle_missing='return_nan',
+                                                                   random_state=123))),
+                ('low_variance',
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0))),
+                ('trained_model',
+                 LogisticRegression(max_iter=1000, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, drift_report=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x7fd568729b90>)
+2022-10-21 14:57:03,810:INFO:Checking exceptions
+2022-10-21 14:57:03,810:INFO:Preloading libraries
+2022-10-21 14:57:03,810:INFO:Set up data.
+2022-10-21 14:57:03,815:INFO:Set up index.
+2022-10-21 14:57:25,113:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:57:25,113:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:57:25,113:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:57:25,113:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:57:25,684:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 14:57:32,115:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:57:32,115:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:57:32,115:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:57:32,115:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 14:57:32,591:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 14:58:00,005:INFO:Initializing load_model()
+2022-10-21 14:58:00,006:INFO:load_model(model_name=/Users/nagatadaiki/Dropbox/My Mac (永田のMacBook Air)/Desktop/アプリ開発/チーム開発/mysite/apps/polls/predict_models/2021_lr, platform=None, authentication=None, verbose=True)
+2022-10-21 14:58:00,035:WARNING:/Users/nagatadaiki/opt/anaconda3/envs/keibaAPI/lib/python3.7/site-packages/pycaret/internal/pipeline.py:117: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.2.2', 'setuptools': '63.4.1', 'pycaret': '3.0.0rc4', 'IPython': '7.34.0', 'ipywidgets': '8.0.2', 'tqdm': '4.64.1', 'numpy': '1.21.5', 'pandas': '1.3.5', 'jinja2': '3.1.2', 'scipy': '1.7.3', 'joblib': '1.2.0', 'sklearn': '1.0.2', 'pyod': '1.0.5', 'imblearn': '0.9.0', 'category_encoders': '2.5.1.post0', 'lightgbm': '3.3.3', 'numba': '0.55.2', 'requests': '2.28.1', 'matplotlib': '3.5.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.10.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.2', 'sktime': '0.13.4', 'tbats': '1.1.1', 'pmdarima': '1.8.5', 'psutil': '5.9.3'}, 'python': {'version': '3.7.13', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '21.1.3', 'setuptools': '57.4.0', 'pycaret': '3.0.0rc4', 'IPython': '7.9.0', 'ipywidgets': '7.7.1', 'tqdm': '4.64.1', 'numpy': '1.21.6', 'pandas': '1.3.5', 'jinja2': '3.1.2', 'scipy': '1.7.3', 'joblib': '1.1.1', 'sklearn': '1.0.2', 'pyod': '1.0.5', 'imblearn': '0.8.1', 'category_encoders': '2.5.1.post0', 'lightgbm': '3.3.3', 'numba': '0.55.2', 'requests': '2.28.1', 'matplotlib': '3.5.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.5.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.2', 'sktime': '0.13.4', 'tbats': '1.1.1', 'pmdarima': '1.8.5', 'psutil': '5.9.2'}, 'python': {'version': '3.7.14', 'machine': 'x86_64'}}
+  self._pycaret_versions, pickle_versions
+
+2022-10-21 14:58:56,884:INFO:Initializing predict_model()
+2022-10-21 14:58:56,885:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fe0d0923750>, estimator=Pipeline(memory=Memory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['bracket_number', 'horse_number',
+                                             'penalty', 'favorite', 'age',
+                                             'horse_weight', 'weight_cycling',
+                                             'circumference'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['horse_name', 'jockey', 'trainer',
+                                             'gender', 'turn', 'wether',
+                                             'ra...
+                 TransformerWrapper(include=['horse_name', 'jockey', 'trainer',
+                                             'racecourse'],
+                                    transformer=LeaveOneOutEncoder(cols=['horse_name',
+                                                                         'jockey',
+                                                                         'trainer',
+                                                                         'racecourse'],
+                                                                   handle_missing='return_nan',
+                                                                   random_state=123))),
+                ('low_variance',
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0))),
+                ('trained_model',
+                 LogisticRegression(max_iter=1000, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, drift_report=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x7fe0b0b9e0e0>)
+2022-10-21 14:58:56,885:INFO:Checking exceptions
+2022-10-21 14:58:56,885:INFO:Preloading libraries
+2022-10-21 14:58:56,885:INFO:Set up data.
+2022-10-21 14:58:56,891:INFO:Set up index.
+2022-10-21 15:12:59,917:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:12:59,917:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:12:59,917:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:12:59,917:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:13:00,738:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 15:13:04,346:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:13:04,346:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:13:04,346:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:13:04,346:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:13:04,834:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 15:13:23,400:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:13:23,400:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:13:23,400:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:13:23,400:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:13:23,926:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 15:14:14,977:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:14:14,977:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:14:14,977:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:14:14,977:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:14:15,841:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 15:14:19,404:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:14:19,404:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:14:19,405:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:14:19,405:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:14:19,889:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 15:15:00,015:INFO:Initializing load_model()
+2022-10-21 15:15:00,016:INFO:load_model(model_name=/Users/nagatadaiki/Dropbox/My Mac (永田のMacBook Air)/Desktop/アプリ開発/チーム開発/mysite/apps/polls/predict_models/2021_lr, platform=None, authentication=None, verbose=True)
+2022-10-21 15:15:00,019:INFO:Initializing load_model()
+2022-10-21 15:15:00,020:INFO:load_model(model_name=/Users/nagatadaiki/Dropbox/My Mac (永田のMacBook Air)/Desktop/アプリ開発/チーム開発/mysite/apps/polls/predict_models/2021_lr, platform=None, authentication=None, verbose=True)
+2022-10-21 15:15:00,028:WARNING:/Users/nagatadaiki/opt/anaconda3/envs/keibaAPI/lib/python3.7/site-packages/pycaret/internal/pipeline.py:117: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.2.2', 'setuptools': '63.4.1', 'pycaret': '3.0.0rc4', 'IPython': '7.34.0', 'ipywidgets': '8.0.2', 'tqdm': '4.64.1', 'numpy': '1.21.5', 'pandas': '1.3.5', 'jinja2': '3.1.2', 'scipy': '1.7.3', 'joblib': '1.2.0', 'sklearn': '1.0.2', 'pyod': '1.0.5', 'imblearn': '0.9.0', 'category_encoders': '2.5.1.post0', 'lightgbm': '3.3.3', 'numba': '0.55.2', 'requests': '2.28.1', 'matplotlib': '3.5.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.10.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.2', 'sktime': '0.13.4', 'tbats': '1.1.1', 'pmdarima': '1.8.5', 'psutil': '5.9.3'}, 'python': {'version': '3.7.13', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '21.1.3', 'setuptools': '57.4.0', 'pycaret': '3.0.0rc4', 'IPython': '7.9.0', 'ipywidgets': '7.7.1', 'tqdm': '4.64.1', 'numpy': '1.21.6', 'pandas': '1.3.5', 'jinja2': '3.1.2', 'scipy': '1.7.3', 'joblib': '1.1.1', 'sklearn': '1.0.2', 'pyod': '1.0.5', 'imblearn': '0.8.1', 'category_encoders': '2.5.1.post0', 'lightgbm': '3.3.3', 'numba': '0.55.2', 'requests': '2.28.1', 'matplotlib': '3.5.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.5.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.2', 'sktime': '0.13.4', 'tbats': '1.1.1', 'pmdarima': '1.8.5', 'psutil': '5.9.2'}, 'python': {'version': '3.7.14', 'machine': 'x86_64'}}
+  self._pycaret_versions, pickle_versions
+
+2022-10-21 15:15:00,033:WARNING:/Users/nagatadaiki/opt/anaconda3/envs/keibaAPI/lib/python3.7/site-packages/pycaret/internal/pipeline.py:117: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.2.2', 'setuptools': '63.4.1', 'pycaret': '3.0.0rc4', 'IPython': '7.34.0', 'ipywidgets': '8.0.2', 'tqdm': '4.64.1', 'numpy': '1.21.5', 'pandas': '1.3.5', 'jinja2': '3.1.2', 'scipy': '1.7.3', 'joblib': '1.2.0', 'sklearn': '1.0.2', 'pyod': '1.0.5', 'imblearn': '0.9.0', 'category_encoders': '2.5.1.post0', 'lightgbm': '3.3.3', 'numba': '0.55.2', 'requests': '2.28.1', 'matplotlib': '3.5.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.10.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.2', 'sktime': '0.13.4', 'tbats': '1.1.1', 'pmdarima': '1.8.5', 'psutil': '5.9.3'}, 'python': {'version': '3.7.13', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '21.1.3', 'setuptools': '57.4.0', 'pycaret': '3.0.0rc4', 'IPython': '7.9.0', 'ipywidgets': '7.7.1', 'tqdm': '4.64.1', 'numpy': '1.21.6', 'pandas': '1.3.5', 'jinja2': '3.1.2', 'scipy': '1.7.3', 'joblib': '1.1.1', 'sklearn': '1.0.2', 'pyod': '1.0.5', 'imblearn': '0.8.1', 'category_encoders': '2.5.1.post0', 'lightgbm': '3.3.3', 'numba': '0.55.2', 'requests': '2.28.1', 'matplotlib': '3.5.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.5.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.2', 'sktime': '0.13.4', 'tbats': '1.1.1', 'pmdarima': '1.8.5', 'psutil': '5.9.2'}, 'python': {'version': '3.7.14', 'machine': 'x86_64'}}
+  self._pycaret_versions, pickle_versions
+
+2022-10-21 15:16:04,023:INFO:Initializing predict_model()
+2022-10-21 15:16:04,024:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fd747e4b210>, estimator=Pipeline(memory=Memory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['bracket_number', 'horse_number',
+                                             'penalty', 'favorite', 'age',
+                                             'horse_weight', 'weight_cycling',
+                                             'circumference'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['horse_name', 'jockey', 'trainer',
+                                             'gender', 'turn', 'wether',
+                                             'ra...
+                 TransformerWrapper(include=['horse_name', 'jockey', 'trainer',
+                                             'racecourse'],
+                                    transformer=LeaveOneOutEncoder(cols=['horse_name',
+                                                                         'jockey',
+                                                                         'trainer',
+                                                                         'racecourse'],
+                                                                   handle_missing='return_nan',
+                                                                   random_state=123))),
+                ('low_variance',
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0))),
+                ('trained_model',
+                 LogisticRegression(max_iter=1000, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, drift_report=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x7fd730dec170>)
+2022-10-21 15:16:04,024:INFO:Checking exceptions
+2022-10-21 15:16:04,024:INFO:Preloading libraries
+2022-10-21 15:16:04,024:INFO:Set up data.
+2022-10-21 15:16:04,029:INFO:Set up index.
+2022-10-21 15:16:04,264:INFO:Initializing predict_model()
+2022-10-21 15:16:04,265:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fb75c60df90>, estimator=Pipeline(memory=Memory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['bracket_number', 'horse_number',
+                                             'penalty', 'favorite', 'age',
+                                             'horse_weight', 'weight_cycling',
+                                             'circumference'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['horse_name', 'jockey', 'trainer',
+                                             'gender', 'turn', 'wether',
+                                             'ra...
+                 TransformerWrapper(include=['horse_name', 'jockey', 'trainer',
+                                             'racecourse'],
+                                    transformer=LeaveOneOutEncoder(cols=['horse_name',
+                                                                         'jockey',
+                                                                         'trainer',
+                                                                         'racecourse'],
+                                                                   handle_missing='return_nan',
+                                                                   random_state=123))),
+                ('low_variance',
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0))),
+                ('trained_model',
+                 LogisticRegression(max_iter=1000, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, drift_report=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x7fb7283aab90>)
+2022-10-21 15:16:04,265:INFO:Checking exceptions
+2022-10-21 15:16:04,265:INFO:Preloading libraries
+2022-10-21 15:16:04,265:INFO:Set up data.
+2022-10-21 15:16:04,270:INFO:Set up index.
+2022-10-21 15:19:40,958:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:19:40,958:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:19:40,958:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:19:40,958:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:19:41,933:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 15:19:52,271:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:19:52,271:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:19:52,271:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:19:52,271:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:19:52,740:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 15:19:56,219:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:19:56,219:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:19:56,219:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:19:56,219:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:19:56,706:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 15:29:21,813:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:29:21,814:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:29:21,814:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:29:21,814:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:29:22,353:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 15:30:00,006:INFO:Initializing load_model()
+2022-10-21 15:30:00,007:INFO:load_model(model_name=/Users/nagatadaiki/Dropbox/My Mac (永田のMacBook Air)/Desktop/アプリ開発/チーム開発/mysite/apps/polls/predict_models/2021_lr, platform=None, authentication=None, verbose=True)
+2022-10-21 15:30:00,029:WARNING:/Users/nagatadaiki/opt/anaconda3/envs/keibaAPI/lib/python3.7/site-packages/pycaret/internal/pipeline.py:117: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.2.2', 'setuptools': '63.4.1', 'pycaret': '3.0.0rc4', 'IPython': '7.34.0', 'ipywidgets': '8.0.2', 'tqdm': '4.64.1', 'numpy': '1.21.5', 'pandas': '1.3.5', 'jinja2': '3.1.2', 'scipy': '1.7.3', 'joblib': '1.2.0', 'sklearn': '1.0.2', 'pyod': '1.0.5', 'imblearn': '0.9.0', 'category_encoders': '2.5.1.post0', 'lightgbm': '3.3.3', 'numba': '0.55.2', 'requests': '2.28.1', 'matplotlib': '3.5.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.10.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.2', 'sktime': '0.13.4', 'tbats': '1.1.1', 'pmdarima': '1.8.5', 'psutil': '5.9.3'}, 'python': {'version': '3.7.13', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '21.1.3', 'setuptools': '57.4.0', 'pycaret': '3.0.0rc4', 'IPython': '7.9.0', 'ipywidgets': '7.7.1', 'tqdm': '4.64.1', 'numpy': '1.21.6', 'pandas': '1.3.5', 'jinja2': '3.1.2', 'scipy': '1.7.3', 'joblib': '1.1.1', 'sklearn': '1.0.2', 'pyod': '1.0.5', 'imblearn': '0.8.1', 'category_encoders': '2.5.1.post0', 'lightgbm': '3.3.3', 'numba': '0.55.2', 'requests': '2.28.1', 'matplotlib': '3.5.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.5.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.2', 'sktime': '0.13.4', 'tbats': '1.1.1', 'pmdarima': '1.8.5', 'psutil': '5.9.2'}, 'python': {'version': '3.7.14', 'machine': 'x86_64'}}
+  self._pycaret_versions, pickle_versions
+
+2022-10-21 15:30:54,426:INFO:Initializing predict_model()
+2022-10-21 15:30:54,426:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fdefda0f710>, estimator=Pipeline(memory=Memory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['bracket_number', 'horse_number',
+                                             'penalty', 'favorite', 'age',
+                                             'horse_weight', 'weight_cycling',
+                                             'circumference'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['horse_name', 'jockey', 'trainer',
+                                             'gender', 'turn', 'wether',
+                                             'ra...
+                 TransformerWrapper(include=['horse_name', 'jockey', 'trainer',
+                                             'racecourse'],
+                                    transformer=LeaveOneOutEncoder(cols=['horse_name',
+                                                                         'jockey',
+                                                                         'trainer',
+                                                                         'racecourse'],
+                                                                   handle_missing='return_nan',
+                                                                   random_state=123))),
+                ('low_variance',
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0))),
+                ('trained_model',
+                 LogisticRegression(max_iter=1000, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, drift_report=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x7fdefd711dd0>)
+2022-10-21 15:30:54,426:INFO:Checking exceptions
+2022-10-21 15:30:54,426:INFO:Preloading libraries
+2022-10-21 15:30:54,427:INFO:Set up data.
+2022-10-21 15:30:54,431:INFO:Set up index.
+2022-10-21 15:31:35,192:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:31:35,192:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:31:35,192:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:31:35,192:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:31:35,783:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 15:32:04,840:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:32:04,840:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:32:04,840:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:32:04,840:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:32:05,372:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 15:32:11,130:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:32:11,130:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:32:11,130:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:32:11,130:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:32:11,600:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 15:33:00,007:INFO:Initializing load_model()
+2022-10-21 15:33:00,009:INFO:load_model(model_name=/Users/nagatadaiki/Dropbox/My Mac (永田のMacBook Air)/Desktop/アプリ開発/チーム開発/mysite/apps/polls/predict_models/2021_lr, platform=None, authentication=None, verbose=True)
+2022-10-21 15:33:00,030:WARNING:/Users/nagatadaiki/opt/anaconda3/envs/keibaAPI/lib/python3.7/site-packages/pycaret/internal/pipeline.py:117: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.2.2', 'setuptools': '63.4.1', 'pycaret': '3.0.0rc4', 'IPython': '7.34.0', 'ipywidgets': '8.0.2', 'tqdm': '4.64.1', 'numpy': '1.21.5', 'pandas': '1.3.5', 'jinja2': '3.1.2', 'scipy': '1.7.3', 'joblib': '1.2.0', 'sklearn': '1.0.2', 'pyod': '1.0.5', 'imblearn': '0.9.0', 'category_encoders': '2.5.1.post0', 'lightgbm': '3.3.3', 'numba': '0.55.2', 'requests': '2.28.1', 'matplotlib': '3.5.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.10.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.2', 'sktime': '0.13.4', 'tbats': '1.1.1', 'pmdarima': '1.8.5', 'psutil': '5.9.3'}, 'python': {'version': '3.7.13', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '21.1.3', 'setuptools': '57.4.0', 'pycaret': '3.0.0rc4', 'IPython': '7.9.0', 'ipywidgets': '7.7.1', 'tqdm': '4.64.1', 'numpy': '1.21.6', 'pandas': '1.3.5', 'jinja2': '3.1.2', 'scipy': '1.7.3', 'joblib': '1.1.1', 'sklearn': '1.0.2', 'pyod': '1.0.5', 'imblearn': '0.8.1', 'category_encoders': '2.5.1.post0', 'lightgbm': '3.3.3', 'numba': '0.55.2', 'requests': '2.28.1', 'matplotlib': '3.5.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.5.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.2', 'sktime': '0.13.4', 'tbats': '1.1.1', 'pmdarima': '1.8.5', 'psutil': '5.9.2'}, 'python': {'version': '3.7.14', 'machine': 'x86_64'}}
+  self._pycaret_versions, pickle_versions
+
+2022-10-21 15:33:54,800:INFO:Initializing predict_model()
+2022-10-21 15:33:54,800:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7fe3a07122d0>, estimator=Pipeline(memory=Memory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['bracket_number', 'horse_number',
+                                             'penalty', 'favorite', 'age',
+                                             'horse_weight', 'weight_cycling',
+                                             'circumference'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['horse_name', 'jockey', 'trainer',
+                                             'gender', 'turn', 'wether',
+                                             'ra...
+                 TransformerWrapper(include=['horse_name', 'jockey', 'trainer',
+                                             'racecourse'],
+                                    transformer=LeaveOneOutEncoder(cols=['horse_name',
+                                                                         'jockey',
+                                                                         'trainer',
+                                                                         'racecourse'],
+                                                                   handle_missing='return_nan',
+                                                                   random_state=123))),
+                ('low_variance',
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0))),
+                ('trained_model',
+                 LogisticRegression(max_iter=1000, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, drift_report=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x7fe3701ad170>)
+2022-10-21 15:33:54,800:INFO:Checking exceptions
+2022-10-21 15:33:54,800:INFO:Preloading libraries
+2022-10-21 15:33:54,801:INFO:Set up data.
+2022-10-21 15:33:54,807:INFO:Set up index.
+2022-10-21 15:36:18,005:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:36:18,005:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:36:18,005:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:36:18,005:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-21 15:36:18,549:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-21 15:37:00,004:INFO:Initializing load_model()
+2022-10-21 15:37:00,006:INFO:load_model(model_name=/Users/nagatadaiki/Dropbox/My Mac (永田のMacBook Air)/Desktop/アプリ開発/チーム開発/mysite/apps/polls/predict_models/2021_lr, platform=None, authentication=None, verbose=True)
+2022-10-21 15:37:00,014:WARNING:/Users/nagatadaiki/opt/anaconda3/envs/keibaAPI/lib/python3.7/site-packages/pycaret/internal/pipeline.py:117: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.2.2', 'setuptools': '63.4.1', 'pycaret': '3.0.0rc4', 'IPython': '7.34.0', 'ipywidgets': '8.0.2', 'tqdm': '4.64.1', 'numpy': '1.21.5', 'pandas': '1.3.5', 'jinja2': '3.1.2', 'scipy': '1.7.3', 'joblib': '1.2.0', 'sklearn': '1.0.2', 'pyod': '1.0.5', 'imblearn': '0.9.0', 'category_encoders': '2.5.1.post0', 'lightgbm': '3.3.3', 'numba': '0.55.2', 'requests': '2.28.1', 'matplotlib': '3.5.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.10.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.2', 'sktime': '0.13.4', 'tbats': '1.1.1', 'pmdarima': '1.8.5', 'psutil': '5.9.3'}, 'python': {'version': '3.7.13', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '21.1.3', 'setuptools': '57.4.0', 'pycaret': '3.0.0rc4', 'IPython': '7.9.0', 'ipywidgets': '7.7.1', 'tqdm': '4.64.1', 'numpy': '1.21.6', 'pandas': '1.3.5', 'jinja2': '3.1.2', 'scipy': '1.7.3', 'joblib': '1.1.1', 'sklearn': '1.0.2', 'pyod': '1.0.5', 'imblearn': '0.8.1', 'category_encoders': '2.5.1.post0', 'lightgbm': '3.3.3', 'numba': '0.55.2', 'requests': '2.28.1', 'matplotlib': '3.5.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.5.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.2', 'sktime': '0.13.4', 'tbats': '1.1.1', 'pmdarima': '1.8.5', 'psutil': '5.9.2'}, 'python': {'version': '3.7.14', 'machine': 'x86_64'}}
+  self._pycaret_versions, pickle_versions
+
+2022-10-21 15:37:54,567:INFO:Initializing predict_model()
+2022-10-21 15:37:54,567:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x7f814cf9b550>, estimator=Pipeline(memory=Memory(location=/tmp/joblib),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['bracket_number', 'horse_number',
+                                             'penalty', 'favorite', 'age',
+                                             'horse_weight', 'weight_cycling',
+                                             'circumference'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['horse_name', 'jockey', 'trainer',
+                                             'gender', 'turn', 'wether',
+                                             'ra...
+                 TransformerWrapper(include=['horse_name', 'jockey', 'trainer',
+                                             'racecourse'],
+                                    transformer=LeaveOneOutEncoder(cols=['horse_name',
+                                                                         'jockey',
+                                                                         'trainer',
+                                                                         'racecourse'],
+                                                                   handle_missing='return_nan',
+                                                                   random_state=123))),
+                ('low_variance',
+                 TransformerWrapper(exclude=[],
+                                    transformer=VarianceThreshold(threshold=0))),
+                ('trained_model',
+                 LogisticRegression(max_iter=1000, random_state=123))]), probability_threshold=None, encoded_labels=False, raw_score=False, drift_report=False, round=4, verbose=True, ml_usecase=None, preprocess=True, replace_labels_in_column=<function _SupervisedExperiment.predict_model.<locals>.replace_labels_in_column at 0x7f814d6073b0>)
+2022-10-21 15:37:54,567:INFO:Checking exceptions
+2022-10-21 15:37:54,567:INFO:Preloading libraries
+2022-10-21 15:37:54,568:INFO:Set up data.
+2022-10-21 15:37:54,574:INFO:Set up index.
+2022-10-24 14:05:24,722:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:05:24,723:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:05:24,723:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:05:24,723:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:05:29,511:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-24 14:05:37,228:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:05:37,228:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:05:37,228:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:05:37,228:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:05:37,749:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-24 14:08:25,726:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:08:25,727:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:08:25,727:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:08:25,727:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:08:26,684:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-24 14:08:29,725:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:08:29,726:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:08:29,726:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:08:29,726:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:08:30,235:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-24 14:24:12,873:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:24:12,873:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:24:12,873:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:24:12,873:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:24:13,471:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-24 14:36:17,073:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:36:17,074:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:36:17,074:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:36:17,074:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:36:17,666:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-24 14:37:00,007:INFO:Initializing load_model()
+2022-10-24 14:37:00,009:INFO:load_model(model_name=/Users/nagatadaiki/Dropbox/My Mac (永田のMacBook Air)/Desktop/アプリ開発/チーム開発/mysite/apps/polls/predict_models/2021_lr, platform=None, authentication=None, verbose=True)
+2022-10-24 14:37:00,037:INFO:Initializing load_model()
+2022-10-24 14:37:00,041:INFO:load_model(model_name=/Users/nagatadaiki/Dropbox/My Mac (永田のMacBook Air)/Desktop/アプリ開発/チーム開発/mysite/apps/polls/predict_models/2021_lr, platform=None, authentication=None, verbose=True)
+2022-10-24 14:37:00,116:WARNING:/Users/nagatadaiki/opt/anaconda3/envs/keibaAPI/lib/python3.7/site-packages/pycaret/internal/pipeline.py:117: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.2.2', 'setuptools': '63.4.1', 'pycaret': '3.0.0rc4', 'IPython': '7.34.0', 'ipywidgets': '8.0.2', 'tqdm': '4.64.1', 'numpy': '1.21.5', 'pandas': '1.3.5', 'jinja2': '3.1.2', 'scipy': '1.7.3', 'joblib': '1.2.0', 'sklearn': '1.0.2', 'pyod': '1.0.5', 'imblearn': '0.9.0', 'category_encoders': '2.5.1.post0', 'lightgbm': '3.3.3', 'numba': '0.55.2', 'requests': '2.28.1', 'matplotlib': '3.5.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.10.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.2', 'sktime': '0.13.4', 'tbats': '1.1.1', 'pmdarima': '1.8.5', 'psutil': '5.9.3'}, 'python': {'version': '3.7.13', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '21.1.3', 'setuptools': '57.4.0', 'pycaret': '3.0.0rc4', 'IPython': '7.9.0', 'ipywidgets': '7.7.1', 'tqdm': '4.64.1', 'numpy': '1.21.6', 'pandas': '1.3.5', 'jinja2': '3.1.2', 'scipy': '1.7.3', 'joblib': '1.1.1', 'sklearn': '1.0.2', 'pyod': '1.0.5', 'imblearn': '0.8.1', 'category_encoders': '2.5.1.post0', 'lightgbm': '3.3.3', 'numba': '0.55.2', 'requests': '2.28.1', 'matplotlib': '3.5.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.5.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.2', 'sktime': '0.13.4', 'tbats': '1.1.1', 'pmdarima': '1.8.5', 'psutil': '5.9.2'}, 'python': {'version': '3.7.14', 'machine': 'x86_64'}}
+  self._pycaret_versions, pickle_versions
+
+2022-10-24 14:37:00,116:WARNING:/Users/nagatadaiki/opt/anaconda3/envs/keibaAPI/lib/python3.7/site-packages/pycaret/internal/pipeline.py:117: UserWarning: Version mismatch:
+current: {'deps_info': {'pip': '22.2.2', 'setuptools': '63.4.1', 'pycaret': '3.0.0rc4', 'IPython': '7.34.0', 'ipywidgets': '8.0.2', 'tqdm': '4.64.1', 'numpy': '1.21.5', 'pandas': '1.3.5', 'jinja2': '3.1.2', 'scipy': '1.7.3', 'joblib': '1.2.0', 'sklearn': '1.0.2', 'pyod': '1.0.5', 'imblearn': '0.9.0', 'category_encoders': '2.5.1.post0', 'lightgbm': '3.3.3', 'numba': '0.55.2', 'requests': '2.28.1', 'matplotlib': '3.5.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.10.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.2', 'sktime': '0.13.4', 'tbats': '1.1.1', 'pmdarima': '1.8.5', 'psutil': '5.9.3'}, 'python': {'version': '3.7.13', 'machine': 'x86_64'}}
+pickle: {'deps_info': {'pip': '21.1.3', 'setuptools': '57.4.0', 'pycaret': '3.0.0rc4', 'IPython': '7.9.0', 'ipywidgets': '7.7.1', 'tqdm': '4.64.1', 'numpy': '1.21.6', 'pandas': '1.3.5', 'jinja2': '3.1.2', 'scipy': '1.7.3', 'joblib': '1.1.1', 'sklearn': '1.0.2', 'pyod': '1.0.5', 'imblearn': '0.8.1', 'category_encoders': '2.5.1.post0', 'lightgbm': '3.3.3', 'numba': '0.55.2', 'requests': '2.28.1', 'matplotlib': '3.5.3', 'scikitplot': '0.3.7', 'yellowbrick': '1.5', 'plotly': '5.5.0', 'kaleido': '0.2.1', 'statsmodels': '0.13.2', 'sktime': '0.13.4', 'tbats': '1.1.1', 'pmdarima': '1.8.5', 'psutil': '5.9.2'}, 'python': {'version': '3.7.14', 'machine': 'x86_64'}}
+  self._pycaret_versions, pickle_versions
+
+2022-10-24 14:37:27,140:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:37:27,140:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:37:27,140:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:37:27,140:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:37:27,675:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-24 14:37:30,506:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:37:30,506:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:37:30,506:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:37:30,506:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:37:30,979:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-24 14:38:28,123:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:38:28,123:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:38:28,123:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:38:28,123:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:38:28,785:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-24 14:41:06,008:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:41:06,009:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:41:06,009:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:41:06,009:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:41:06,606:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-24 14:41:49,270:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:41:49,270:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:41:49,270:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:41:49,270:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:41:49,888:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-24 14:42:49,264:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:42:49,264:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:42:49,264:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:42:49,264:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:42:49,805:WARNING:
+'prophet' is a soft dependency and not included in the pycaret installation. Please run: `pip install prophet` to install.
+2022-10-24 14:49:43,502:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:49:43,502:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:49:43,502:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2022-10-24 14:49:43,502:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.

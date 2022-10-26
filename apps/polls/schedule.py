@@ -1,4 +1,4 @@
-from .models import SampleModel                         # モデル呼出
+from .models import SampleModel, HorseModel                       # モデル呼出
 from datetime import datetime, date
 from apscheduler.schedulers.background import BackgroundScheduler
 
@@ -17,7 +17,7 @@ import time
 
 
 def scraping(): # スクレイピング処理
-    # print('start')  # 動作確認用
+    print('start')  # 動作確認用
     # 設定 #
 
     year =2022
@@ -120,9 +120,6 @@ def scraping(): # スクレイピング処理
 
 # 予測
 def predict():
-    path = os.path.dirname(__file__) + '/predict_models/2021_lr'
-    model = load_model(path)
-    data_predict = scraping()
 
     # スコアの表示を整える
     def score(self):
@@ -132,18 +129,38 @@ def predict():
             return self['prediction_score']
         else :
             return str("none")
+    
+    path = os.path.dirname(__file__) + '/predict_models/2021_lr'
+    model = load_model(path)    # 予測モデルのパス
+    race_data = scraping()   # スクレイピングしたレース情報
 
-    result = predict_model(model, data = data_predict)
 
-    result_d = result.loc[:, ['horse_number', 'prediction_label', 'prediction_score']].sort_values('horse_number').reset_index(drop=True)
-    result_d['score'] = result_d.apply(score, axis=1)
+    result = predict_model(model, data = race_data)
 
-    print(result_d)
+    result['score'] = result.apply(score,axis=1)
+    score_std = result['score'].std(ddof=0)
+    score_mean = result['score'].mean()
+    result['DeviationValue'] = result['score'].map(lambda x: round((x - score_mean) / score_std * 10 + 50, 2))
+
+    merge = pd.merge(race_data, result['DeviationValue'], right_index=True, left_index=True)
+
+    # merge.to_csv()
+    # merge.to_json()
+
+    # print(merge.to_json())
+    predict_data = merge.to_json
+    return predict_data
+
+# データベースに予測結果を追加
+def model_add():
+    sample = HorseModel(race_id = 3, score = predict())
+    sample.save()
+    print('OK')
 
 # 定期実行処理
 def start():
     scheduler = BackgroundScheduler()
     # scheduler.add_job(predict, 'interval', seconds=10) # 処理時間の指定
     # scheduler.add_job(scraping, 'cron', hour=22, day_of_week='sat,sun') # 土曜と日曜の22時になると実行
-    scheduler.add_job(predict, 'cron', minute = 57)
+    scheduler.add_job(model_add, 'cron', minute = 37)
     scheduler.start()

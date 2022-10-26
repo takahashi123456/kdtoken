@@ -16,5 +16,10 @@ class IndexView(View.TemplateView):
 
 # def index():
 
-def squreip(request):
-    pass
+def test(request):
+    race_data = HorseModel.objects.get(race_id=3)
+
+    context = {
+    'test': race_data
+    }
+    return render(request, 'index.html', context)

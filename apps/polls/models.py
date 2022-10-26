@@ -12,8 +12,8 @@ class SampleModel(models.Model):
 class HorseModel(models.Model):
 
     race_id = models.IntegerField(primary_key=True)
-    score = models.FloatField(blank = True, null = True)
+    score = models.TextField()
 
-    def __str__(self):
+    def __int__(self):
         return self.race_id
 
