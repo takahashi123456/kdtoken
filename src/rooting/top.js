@@ -18,8 +18,7 @@ const sections = [
     { title: '今週のレース予想', url: '#' },
     { title: 'モデル別回収率一覧', url: '#' },
     { title: 'お知らせ', url: '#' },
-    { title: 'お問合せ', url: '#' },
-
+    { title: 'お問合せ', url: '/contact' },
 ];
 
 

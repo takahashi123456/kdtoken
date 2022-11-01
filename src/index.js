@@ -11,6 +11,7 @@ import {
 
 import Top from './rooting/top'
 import List from './rooting/list'
+import Contact from './rooting/contac'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,6 +22,7 @@ root.render(
         <Route path="/top" element={<App />} />
         <Route path="/" element={<Top />} />
         <Route path="/list" element={<List />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

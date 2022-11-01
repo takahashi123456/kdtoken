@@ -1,11 +1,14 @@
 import axios from "axios";
 import React from "react";
+import DenseTable from "./body/simple_table";
 
-const baseURL = "https://jsonplaceholder.typicode.com/todos/1";
+
 
 export default function Apitest3() {
+    const baseURL = "http://192.168.3.54:8000/api/";
+
     const [ isLoading, setIsLoading ] = React.useState(false);
-    const [post, setPost] = React.useState(null);
+    const [posts, setPost] = React.useState(null);
 
     React.useEffect(() => {
         axios.get(baseURL).then((response) => {
@@ -17,16 +20,31 @@ export default function Apitest3() {
         });
     }, []);
 
-    if (!post) return null;
+    if (!posts) return null;
+
 
     if (!isLoading) {
         return <div>Loading...</div>;
         }
     else {
         return (
-            <div>
-                <h1>レースID {post.id}</h1>
-                <p>テスト {post.title}</p>
-            </div>)
+            <>
+            {posts.map(post => {
+                // console.log(post);
+                var Json_race =""
+                if (Json_race == ""){
+                Json_race = JSON.parse(post.score);
+                }else{
+                    console.log(Json_race);
+                };
+                return(
+                <div key={post.race_id}>
+                    <h1>レースID {post.race_id}</h1>
+                    {/*<p>name {Json_race.horse_name[0]}</p>*/}
+                    <DenseTable json={Json_race}  />
+                </div>)
+        })}
+            </>
+        )
     };
 }

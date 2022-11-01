@@ -3,6 +3,7 @@ import DjangoApi from '../components/apiget2';
 import Header from "../components/header/header";
 import Apitest3 from "../components/apiget3";
 import Container from '@mui/material/Container';
+import Form from "../components/body/form";
 
 
 const sections = [
@@ -14,14 +15,14 @@ const sections = [
 ];
 
 
-export default class List extends React.Component {
+export default class Contact extends React.Component {
     render() {
         return (
             <div>
                 <Header title="競馬AI" sections={sections} />
                 <Container>
-                    <h1>過去のレース結果表示</h1>
-                    <Apitest3 />
+                    <h1>お問合せ</h1>
+                    <Form />
                 </Container>
             </div>
         )
