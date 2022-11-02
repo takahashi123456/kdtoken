@@ -15,8 +15,24 @@ import glob
 import re
 import time
 
-class ScrapingBase():
+class DateRaces:
+    def scraping_base():
+        pass
+
+    def races_save():
+        pass
+
+class RaceScraping(DateRaces):
     def __init__(self):
+        # 設定
+        self.year =2022
+        self.keibajyou = 8
+        self.kai = 3
+        self.nichime = 7
+        self.race = 5
+
+    def scraping_base(self):
+        # seleniumの設定
         options = webdriver.ChromeOptions()
         options.add_argument('--headless')
         options.add_argument('--no-sandbox')
@@ -24,35 +40,37 @@ class ScrapingBase():
         self.driver = webdriver.Chrome('chromedriver',options=options)
         self.driver.implicitly_wait(10)
 
-        # 設定
-        self.year =2022
-        self.keibajyou = 3
-        self.kai = 3
-        self.nichime = 4
-        self.race = 0
-
-
+        # 競馬場情報
         self.keibajyou_list = ['01','02','03','04','05','06','07','08','09','10']
         self.kai_list = ['01','02','03','04','05','06']
         self.nichime_list = ['01','02','03','04','05','06','07','08','09','10','11','12']
         self.race_list = ['01','02','03','04','05','06','07','08','09','10','11','12']
 
-
-class RaceScraping(ScrapingBase):
     def race_data_scraping(self): # スクレイピング処理
         print('start')  # 動作確認用
+
+        self.scraping_base()
 
         url = 'https://race.netkeiba.com/race/shutuba.html?race_id=' +  str(self.year) + str(self.keibajyou_list[self.keibajyou]) + str(self.kai_list[self.kai]) + str(self.nichime_list[self.nichime]) + str(self.race_list[self.race])
         
         soup = BeautifulSoup(requests.get(url).content, 'lxml')
         span =  soup.select_one('#page > div.RaceColumn01 > div > div.RaceMainColumn > div.RaceList_NameBox > div.RaceList_Item02 > div.RaceData01').get_text().strip()
         self.race_data = [[j.strip() for j in i.split(':', 1)] for i in span.split('/')]
-
         self.driver.get(url)
-
         self.html = self.driver.page_source.encode('utf-8')
 
-    def data_shape(self): # データ整形
+        print(url)
+
+
+class ShapingRaceData(RaceScraping):
+    def base_shaping(self):
+        self.wether = {'晴':'sunny', '曇':'cloudy','雨': 'rain', '小雨':'light rain', '雪':'snowy', '小雪':'light snowy'}
+        self.track_condition = {'良':'firm', '稍':'good', '重':'soft', '不良':'heavy'}
+        self.racecourse_list = {'01':'Sapporo', '02':'Hakodate', '03':'Fukushima', '04':'Niigata', '05':'Tokyo', '06':'Nakayama', '07':'Chukyo', '08':'Kyoto', '09':'Hanshin', '10':'Kokura'}
+
+    def data_shaping(self): # データ整形
+        super().race_data_scraping()
+        self.base_shaping()
 
         def change_en(value_data):
             return  translator.translate(value_data).text
@@ -84,12 +102,6 @@ class RaceScraping(ScrapingBase):
 
         translator = Translator()
         data_list = pd.DataFrame()
-
-        wether = {'晴':'sunny', '曇':'cloudy','雨': 'rain', '小雨':'light rain', '雪':'snowy', '小雪':'light snowy'}
-        track_condition = {'良':'firm', '稍':'good', '重':'soft', '不良':'heavy'}
-        racecourse_list = {'01':'Sapporo', '02':'Hakodate', '03':'Fukushima', '04':'Niigata', '05':'Tokyo', '06':'Nakayama', '07':'Chukyo', '08':'Kyoto', '09':'Hanshin', '10':'Kokura'}
-
-        self.race_data_scraping()
         
         data_new = pd.read_html(self.html, encoding='utf-8')[0]
 
@@ -106,12 +118,12 @@ class RaceScraping(ScrapingBase):
         data_new['gender'] = data_new['性齢'].apply(gender)
         data_new['horse_weight'] = data_new['馬体重'].apply(horse_weight)
         data_new['weight_cycling'] = data_new['馬体重'].apply(weight_cycling)
-        data_new['racecourse'] = str(racecourse_list[str(self.keibajyou_list[self.keibajyou])])
+        data_new['racecourse'] = str(self.racecourse_list[str(self.keibajyou_list[self.keibajyou])])
         data_new['turn'] = 'clockwise' if re.findall('(?<=\().+?(?=\))', str(self.race_data[1]))[0]  == '右' else 'anticlockwise'
         data_new['circumference'] = int(re.sub(r"\D", "", self.race_data[1][0]))
-        data_new['wether'] = wether[self.race_data[2][1]]
+        data_new['wether'] = self.wether[self.race_data[2][1]]
         data_new['track_surface'] = 'grass' if self.race_data[1][0][:1]  == '芝' else 'dirt'
-        data_new['track_condition'] = track_condition[self.race_data[3][1]]
+        data_new['track_condition'] = self.track_condition[self.race_data[3][1]]
         data_new['race_id'] = str(self.year) + str(self.keibajyou_list[self.keibajyou]) + str(self.kai_list[self.kai]) + str(self.nichime_list[self.nichime]) + str(self.race_list[self.race])
         data_new = data_new.rename(columns={'枠番':'bracket_number', '馬番':'horse_number', '斤量':'penalty', '単勝':'odds', '人気':'favorite'})
         data_new[['penalty', 'favorite']] = data_new[['penalty', 'favorite']].astype('int')
@@ -145,3 +157,4 @@ class RaceScraping(ScrapingBase):
         # data_list.to_csv('[PATHを指定]' + str(self.year) + str(self.keibajyou_list[self.keibajyou]) + str(self.kai_list[self.kai]) + str(self.nichime_list[self.nichime]) + str(self.race_list[race]) + '.csv')
         # print(data_list)
         return data_list
+

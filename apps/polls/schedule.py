@@ -1,7 +1,7 @@
 from .models import SampleModel, HorseModel                       # モデル呼出
 from datetime import datetime, date
 from apscheduler.schedulers.background import BackgroundScheduler
-from .scraping import RaceScraping
+from .scraping import *
 
 from bs4 import BeautifulSoup
 from googletrans import Translator
@@ -44,25 +44,29 @@ def predict_score(race_data):   #　引数にスクレイピングしたレー�
     # merge.to_csv()
     # merge.to_json()
 
-    # print(merge.to_json())
+    print(merge)
     predict_data = merge.to_json()
     return predict_data
 
 # データベースに予測結果を追加
 def model_add(predict, race_data):
-    sample = HorseModel(race_id = 4, score = predict(race_data))
+    sample = HorseModel(race_id = 6, score = predict(race_data))
     sample.save()
     print('OK')
 
 # 関数をまとめる
 def score_schedule_execute():
+    start = time.time()
+    saping = ShapingRaceData()
     # model_add(predict_score, race_data_scraping)
-    model_add(predict_score, RaceScraping().data_shape())
+    model_add(predict_score, saping.data_shaping())
+    end = time.time()
+    print(end - start)
 
 # 定期実行処理
 def start():
     scheduler = BackgroundScheduler()
     # scheduler.add_job(predict, 'interval', seconds=10) # 処理時間の指定
     # scheduler.add_job(race_data_scraping, 'cron', hour=22, day_of_week='sat,sun') # 土曜と日曜の22時になると実行
-    scheduler.add_job(score_schedule_execute, 'cron', hour=9, minute = 40)
+    scheduler.add_job(score_schedule_execute, 'cron', minute = 59)
     scheduler.start()
