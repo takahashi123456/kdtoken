@@ -17,3 +17,10 @@ class HorseModel(models.Model):
     def __int__(self):
         return self.race_id
 
+# レースidと時間
+class RacesTimeModel(models.Model):
+    race_id = models.IntegerField()
+    time_minute = models.IntegerField()
+
+    def __int__(self):
+        return self.race_id
