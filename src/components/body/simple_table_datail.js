@@ -1,25 +1,22 @@
 import * as React from 'react';
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
-import TableContainer from '@mui/material/TableContainer';
-import TableHead from '@mui/material/TableHead';
-import TableRow from '@mui/material/TableRow';
-import Paper from '@mui/material/Paper';
+import { DataGrid } from '@mui/x-data-grid';
 
-function createData(horse_number, horse_name, jockey, horse_weight, favorite, odds,deviationValue) {
-    return {horse_number, horse_name, jockey, horse_weight, favorite, odds,deviationValue };
+function createData(id, horse_name, jockey, horse_weight, favorite, odds,deviationValue) {
+    return {id, horse_name, jockey, horse_weight, favorite, odds,deviationValue };
 }
 
-// const rows = [
-//     createData('Frozen yoghurt', 159, 6.0, 24, 4.0),
-//     createData('Ice cream sandwich', 237, 9.0, 37, 4.3),
-//     createData('Eclair', 262, 16.0, 24, 6.0),
-//     createData('Cupcake', 305, 3.7, 67, 4.3),
-//     createData('Gingerbread', 356, 16.0, 49, 3.9),
-// ];
+const columns = [
+    { field: 'id', headerName: 'id', width: 100 },
+    { field: 'horse_name', headerName: 'horse_name', width: 150 },
+    { field: 'jockey', headerName: 'jockey', width: 150 },
+    { field: 'horse_weight', headerName: 'horse_weight', type: 'number', width: 200},
+    { field: 'favorite', headerName: 'favorite', type: 'number', width: 150},
+    { field: 'odds', headerName: 'odds', type: 'number', width: 150},
+    { field: 'deviationValue', headerName: '勝率偏差値', type: 'number', width: 200}
+];
 
-export default function DenseTable(props) {
+export default function DataTable_datail(props) {
+    console.log(props)
     const rows = []
     const json = props.json
     const race_length = Object.keys(json["horse_name"]).length;
@@ -28,36 +25,15 @@ export default function DenseTable(props) {
         rows.push(horse_info)
     }
     return (
-        <TableContainer component={Paper}>
-            <Table sx={{ minWidth: 650 }} size="small" aria-label="a dense table">
-                <TableHead>
-                    <TableRow>
-                        <TableCell>馬番</TableCell>
-                        <TableCell>ウマ名</TableCell>
-                        <TableCell align="right">騎手</TableCell>
-                        <TableCell align="right">馬体重</TableCell>
-                        <TableCell align="right">人気</TableCell>
-                        <TableCell align="right">オッズ</TableCell>
-                        <TableCell align="right">強さ偏差値</TableCell>
-                    </TableRow>
-                </TableHead>
-                <TableBody>
-                    {rows.map((row) => (
-                        <TableRow
-                            key={row.horse_number}
-                            sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                        >
-                            <TableCell component="th" scope="row">{row.horse_number}</TableCell>
-                            <TableCell component="th" scope="row">{row.horse_name}</TableCell>
-                            <TableCell align="right">{row.jockey}</TableCell>
-                            <TableCell align="right">{row.horse_weight}</TableCell>
-                            <TableCell align="right">{row.favorite}</TableCell>
-                            <TableCell align="right">{row.odds}</TableCell>
-                            <TableCell align="right">{row.deviationValue}</TableCell>
-                        </TableRow>
-                    ))}
-                </TableBody>
-            </Table>
-        </TableContainer>
+        <div style={{ height: "100%", width: '98%' }}>
+            <DataGrid
+                rows={rows}
+                columns={columns}
+                pageSize={race_length}
+                rowsPerPageOptions={[7]}
+                autoHeight="True"
+                disableExtendRowFullWidth="True"
+            />
+        </div>
     );
 }

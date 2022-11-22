@@ -1,11 +1,12 @@
 import axios from "axios";
 import React from "react";
 import DenseTable from "./body/simple_table";
+import DataTable_datail from "./body/simple_table_datail";
 
 
 
-export default function Apitest3() {
-    const baseURL = "http://192.168.3.54:8000/api/";
+export default function Apitest4() {
+    const baseURL = "http://192.168.1.140:8000/api/";
 
     const [ isLoading, setIsLoading ] = React.useState(false);
     const [posts, setPost] = React.useState(null);
@@ -41,7 +42,7 @@ export default function Apitest3() {
                 <div key={post.race_id}>
                     <h1>レースID {post.race_id}</h1>
                     {/*<p>name {Json_race.horse_name[0]}</p>*/}
-                    <DenseTable json={Json_race}  />
+                    <DataTable_datail json={Json_race}  />
                 </div>)
         })}
             </>

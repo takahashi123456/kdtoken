@@ -1,7 +1,7 @@
 import React from 'react';
 import DjangoApi from '../components/apiget2';
 import Header from "../components/header/header";
-import Apitest3 from "../components/apiget3";
+import Apitest4 from "../components/apiget4";
 import Container from '@mui/material/Container';
 
 
@@ -21,7 +21,7 @@ export default class List extends React.Component {
                 <Header title="競馬AI" sections={sections} />
                 <Container>
                     <h1>過去のレース結果表示</h1>
-                    <Apitest3 />
+                    <Apitest4 />
                 </Container>
             </div>
         )
