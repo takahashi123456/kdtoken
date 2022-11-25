@@ -1,63 +1,23 @@
 from .models import HorseModel, RacesTimeModel      # モデル呼出
 from .scraping import *
+from .predict import *
 
 from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.combining import AndTrigger, OrTrigger
 from apscheduler.triggers.interval import IntervalTrigger
 from apscheduler.triggers.cron import CronTrigger
-from googletrans import Translator
-from pycaret.classification import *
 
 import datetime
-import pandas as pd
-import numpy as np
-import os
-import glob
-import re
 import time
 
-# 予測
-def predict_score(race_data):   #　引数にスクレイピングしたレース情報
-    # スコアの表示を整える
-    def score(self):
-        if self['prediction_label'] == 0:
-            return 1 - self['prediction_score']
-        elif self['prediction_label'] == 1:
-            return self['prediction_score']
-        else :
-            return str("none")
-    
-    path = os.path.dirname(__file__) + '/predict_models/2021_lr'
-    model = load_model(path)    # 予測モデルのパス
-
-    result = predict_model(model, data = race_data)
-
-    result['score'] = result.apply(score,axis=1)
-    score_std = result['score'].std(ddof=0)
-    score_mean = result['score'].mean()
-    result['DeviationValue'] = result['score'].map(lambda x: round((x - score_mean) / score_std * 10 + 50, 2))
-
-    merge = pd.merge(race_data, result['DeviationValue'], right_index=True, left_index=True)
-    merge.to_csv('/Users/nagatadaiki/Dropbox/My Mac (永田のMacBook Air)/Desktop/data_predict_' + 'sample' + '.csv')
-    # merge.to_csv()
-    # merge.to_json()
-
-    print(merge)
-    # predict_data = merge.to_json()
-    return merge.to_json()
-
-# データベースに予測結果を追加
-def model_add(predict, race_data):
-    sample = HorseModel(race_id = 6, score = predict(race_data))
-    sample.save()
-    print('OK')
-
 # 関数をまとめる
-def score_schedule_execute():
+def score_schedule_execute(id):
     start = time.time()
-    shaping = ShapingRaceData()
-    # model_add(predict_score, race_data_scraping)
-    model_add(predict_score, shaping.data_shaping())
+    scraping_get = ShapingRaceData(id)
+    predict_get = PredictRace()
+    # race_id = 202209050102
+    
+    predict_get.model_add(scraping_get.data_shaping(), id)
     end = time.time()
     print(end - start)
 
@@ -78,37 +38,69 @@ def date_farst_execute():
 
     end = time.time()
     print(end - start)
-    print(data_id_minute)
-
+    # print(data_id_minute)
 
 # 定期実行処理
 def start():
     scheduler = BackgroundScheduler()
+    id_time_model = RacesTimeModel.objects.all()
 
-    def test():
-        print(datetime.datetime.now())
-        time_model = RacesTimeModel.objects.all()[0]
-        print(time_model.race_id, time_model.time_minute)
-        # print(len(time_model))
-        # global cnt
-        # cnt += 5
-        # trigger = AndTrigger([IntervalTrigger(seconds=cnt)])
-        # scheduler.reschedule_job('test01' , trigger=trigger, args=[], max_instances=1)
+    def sample(cnt):
+        print(cnt)
+        race_id = id_time_model[cnt].race_id
+        print(type(race_id))
+        print(race_id)
+        scheduler.modify_job('test01', args=[cnt+1])
 
-    def day_schedule_time_put():
-        print('レース時間の指定完了')
-        
-        time_hour = [30, 31, 32, 33, 34]
-        time_minute = [10, 20, 30, 40, 50]
-        trigger_list = [CronTrigger(hour=time_hour[i], second=time_minute[i], jitter=5) for i in range(len(time_hour))]
-        trigger = OrTrigger(trigger_list)
-        scheduler.reschedule_job('test01' , trigger=trigger)
+    def id_update(cnt):
+        print('update')
+        # try:
+        print(cnt)
+        print(type(cnt))
+        race_id = id_time_model[cnt].race_id
+        score_schedule_execute(race_id)
+        scheduler.modify_job('schedule_predict', args=[cnt+1])
+        print('count')
+        # except:
+        #     scheduler.modify_job('schedule_predict', args=[0])
+        #     print('riset')
     
-    # scheduler.add_job(predict, 'interval', seconds=10) # 処理時間の指定
-    # scheduler.add_job(race_data_scraping, 'cron', hour=22, day_of_week='sat,sun') # 土曜と日曜の22時になると実行
-    scheduler.add_job(date_farst_execute, 'cron', minute=58, max_instances=1)
-    scheduler.add_job(score_schedule_execute, 'cron', minute = 55, id='', max_instances=1)
-    scheduler.add_job(day_schedule_time_put,'cron', minute=43, max_instances=1)
-    scheduler.add_job(test,'cron', minute=52, id='test01', max_instances=1)
+    # 定期実行時間の更新
+    def day_schedule_time_apdate():
+        for time_model in id_time_model:
+            print(time_model.time_minute // 60, time_model.time_minute % 60)
+
+        trigger_list = [CronTrigger(hour=time_model.time_minute // 60,
+                                    minute=time_model.time_minute % 60, 
+                                    jitter=60)
+                                    for time_model in id_time_model]
+        trigger = OrTrigger(trigger_list)
+
+        scheduler.reschedule_job('schedule_predict' , trigger=trigger)
+        print(datetime.datetime.now(), ':OK')
+
+    # 定期実行時間の更新
+    def test():
+        for time_model in id_time_model:
+            print(time_model.time_minute // 60, time_model.time_minute % 60)
+
+        trigger_list = [CronTrigger(minute=time_model.time_minute // 60,
+                                    second=time_model.time_minute % 60, 
+                                    jitter=60)
+                                    for time_model in id_time_model]
+        trigger = OrTrigger(trigger_list)
+
+        scheduler.reschedule_job('test01' , trigger=trigger)
+        print(datetime.datetime.now(), ':OK')
+    
+    # scheduler.add_job(date_farst_execute, 'cron', minute=58, max_instances=1)
+    # scheduler.add_job(score_schedule_execute, 'cron', minute=32, id='schedule_predict', max_instances=5)
+    scheduler.add_job(id_update, 'cron', day=30, args=[0], id='schedule_predict', max_instances=5)
+    # scheduler.add_job(test, 'cron', minute=29, max_instances=1)
+    scheduler.add_job(day_schedule_time_apdate, 'cron', minute=43, max_instances=1)
+    # scheduler.add_job(sample,'cron', day=28, args=[0], id='test01', max_instances=10)
+    # scheduler.add_job(sample,'interval', seconds=10, args=[0], id='test01', max_instances=1)
+    # scheduler.add_job(test,'cron', minute=15, max_instances=1)
+    # scheduler.add_job(sample, 'interval', seconds=10, args=[1], id='test02', max_instances=1)
     
     scheduler.start()

@@ -17,12 +17,18 @@ class RaceScraping:
 
     def __init__(self, id=None):
         # 設定
-        self.year = 2022
-        self.keibajyou = 9
-        self.kai = 4
-        self.nichime = 5
-        self.race = 11
-        self.id = id
+        # self.year = 2022
+        # self.keibajyou = 9
+        # self.kai = 4
+        # self.nichime = 5
+        # self.race = 11
+        self.id = str(id)
+
+        self.year = self.id[:4]
+        self.keibajyou = self.id[4:6]
+        self.kai = self.id[6:8]
+        self.nichime = self.id[8:10]
+        self.race = self.id[10:]
         
     def scraping_base(self):
         # seleniumの設定
@@ -33,7 +39,8 @@ class RaceScraping:
         self.driver = webdriver.Chrome('chromedriver',options=options)
         self.driver.implicitly_wait(10)
 
-    def date_races_list(self): # １日のレースデータ
+    # １日のレースデータ
+    def date_races_list(self):
         print('start')
         self.scraping_base()
 
@@ -57,13 +64,14 @@ class RaceScraping:
 
         return year, html
 
-    def race_data_scraping(self): # レース単位
+    # レース単位
+    def race_data_scraping(self):
         print('start')  # 動作確認用
 
         self.scraping_base()
 
-        url = 'https://race.netkeiba.com/race/shutuba.html?race_id=' +  str(self.year) + str(self.keibajyou).zfill(2) + str(self.kai).zfill(2) + str(self.nichime).zfill(2) + str(self.race).zfill(2)
-        # url = 'https://race.netkeiba.com/race/shutuba.html?race_id=' +  self.id
+        # url = 'https://race.netkeiba.com/race/shutuba.html?race_id=' +  str(self.year) + str(self.keibajyou).zfill(2) + str(self.kai).zfill(2) + str(self.nichime).zfill(2) + str(self.race).zfill(2)
+        url = 'https://race.netkeiba.com/race/shutuba.html?race_id=' +  self.id
         print(url)
         soup = BeautifulSoup(requests.get(url).content, 'lxml')
         span =  soup.select_one('#page > div.RaceColumn01 > div > div.RaceMainColumn > div.RaceList_NameBox > div.RaceList_Item02 > div.RaceData01').get_text().strip()
@@ -174,13 +182,15 @@ class ShapingRaceData(RaceScraping):
         data_new['gender'] = data_new['性齢'].apply(gender)
         data_new['horse_weight'] = data_new['馬体重'].apply(horse_weight)
         data_new['weight_cycling'] = data_new['馬体重'].apply(weight_cycling)
-        data_new['racecourse'] = self.racecourse_list[str(self.keibajyou).zfill(2)]
+        # data_new['racecourse'] = self.racecourse_list[str(self.keibajyou).zfill(2)]
+        data_new['racecourse'] = self.racecourse_list[self.keibajyou]
         data_new['turn'] = 'clockwise' if re.findall('(?<=\().+?(?=\))', str(self.race_data[1]))[0]  == '右' else 'anticlockwise'
         data_new['circumference'] = int(re.sub(r"\D", "", self.race_data[1][0]))
         data_new['wether'] = self.wether[self.race_data[2][1]]
         data_new['track_surface'] = 'grass' if self.race_data[1][0][:1]  == '芝' else 'dirt'
         data_new['track_condition'] = self.track_condition[self.race_data[3][1]]
-        data_new['race_id'] = str(self.year) + str(self.keibajyou).zfill(2) + str(self.kai).zfill(2) + str(self.nichime).zfill(2) + str(self.race).zfill(2)
+        # data_new['race_id'] = str(self.year) + str(self.keibajyou).zfill(2) + str(self.kai).zfill(2) + str(self.nichime).zfill(2) + str(self.race).zfill(2)
+        data_new['race_id'] = self.id
         data_new = data_new.rename(columns={'枠番':'bracket_number', '馬番':'horse_number', '斤量':'penalty', '単勝':'odds', '人気':'favorite'})
         data_new[['penalty', 'favorite']] = data_new[['penalty', 'favorite']].astype('int')
         data_new[['odds']] = data_new[['odds']].astype('float')
