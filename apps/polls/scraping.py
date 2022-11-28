@@ -17,11 +17,6 @@ class RaceScraping:
 
     def __init__(self, id=None):
         # 設定
-        # self.year = 2022
-        # self.keibajyou = 9
-        # self.kai = 4
-        # self.nichime = 5
-        # self.race = 11
         self.id = str(id)
 
         self.year = self.id[:4]
@@ -48,10 +43,10 @@ class RaceScraping:
         date_now = date_now.split('-')
 
         year = date_now[0]
-        # month = datenow[1]
-        # day = datenow[2]
-        month = '11'
-        day = '05'
+        month = date_now[1]
+        day = date_now[2]
+        # month = '11'
+        # day = '05'
         url = "https://race.netkeiba.com/top/race_list.html?kaisai_date=" + year + month + day
 
         # urlから取得
