@@ -55,8 +55,8 @@ def start():
             scheduler.modify_job('schedule_predict', args=[cnt+1])
             print('count')
         except:
-            scheduler.modify_job('schedule_predict', args=[0])
-            print('riset')
+            scheduler.modify_job('schedule_predict', args=[cnt+1])
+            print('skipp')
     
     # 定期実行時間の更新
     def day_schedule_time_apdate():
@@ -70,13 +70,29 @@ def start():
         trigger = OrTrigger(trigger_list)
 
         scheduler.reschedule_job('schedule_predict' , trigger=trigger)
+        scheduler.modify_job('schedule_predict', args=[0])
         print(datetime.datetime.now(), ':OK')
 
+    def test(cnt):
+        print('update')
+        try:
+            print(cnt)
+            print(type(cnt))
+            race_id = id_time_model[cnt].race_id
+            score_schedule_execute(race_id)
+            scheduler.modify_job('test', args=[cnt+1])
+            print('count')
+        except:
+            scheduler.modify_job('test', args=[cnt+1])
+            print('next')
+
     
-    scheduler.add_job(date_farst_execute, 'cron', hour=14, minute=22, max_instances=1)
+    scheduler.add_job(date_farst_execute, 'cron', hour=10, minute=11, max_instances=1)
     # scheduler.add_job(score_schedule_execute, 'cron', minute=32, id='schedule_predict', max_instances=5)
     scheduler.add_job(id_update, 'cron', day=30, args=[0], id='schedule_predict', max_instances=5)
-    scheduler.add_job(day_schedule_time_apdate, 'cron', hour=14, minute=24, max_instances=1)
+    scheduler.add_job(day_schedule_time_apdate, 'cron', hour=9, minute=52, max_instances=1)
+    scheduler.add_job(test, 'interval', minutes=2, args=[22], jitter=60, id='test', max_instances=5)
+    # scheduler.add_job(test, 'cron', minute=1, args=[22], jitter=60, id='test', max_instances=5)
     # scheduler.add_job(score_schedule_execute, 'cron', minute=57, args=[202209050102], max_instances=1)
     
     scheduler.start()
