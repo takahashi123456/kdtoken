@@ -6,7 +6,7 @@ import DataTable_datail from "./body/simple_table_datail";
 
 
 export default function Apitest4() {
-    const baseURL = "http://192.168.1.140:8000/api/";
+    const baseURL = "http://192.168.2.130:8000/api/";
 
     const [ isLoading, setIsLoading ] = React.useState(false);
     const [posts, setPost] = React.useState(null);
