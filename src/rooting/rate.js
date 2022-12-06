@@ -1,9 +1,8 @@
 import React from 'react';
 import DjangoApi from '../components/apiget2';
 import Header from "../components/header/header";
-import Apitest3 from "../components/apiget3";
+import Apitest5 from "../components/apiget_rate";
 import Container from '@mui/material/Container';
-import Form from "../components/body/form";
 
 
 const sections = [
@@ -15,14 +14,14 @@ const sections = [
 ];
 
 
-export default class Contact extends React.Component {
+export default class Rate extends React.Component {
     render() {
         return (
             <div>
                 <Header title="競馬AI" sections={sections} />
                 <Container>
-                    <h1>お問合せ</h1>
-                    <Form />
+                    <h1>現在の最強馬</h1>
+                    <Apitest5 />
                 </Container>
             </div>
         )
