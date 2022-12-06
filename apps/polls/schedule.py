@@ -1,5 +1,5 @@
 from .models import HorseModel, RacesTimeModel      # モデル呼出
-from .scraping import *
+from .scraping import ScrapingData
 from .predict import *
 
 from apscheduler.schedulers.background import BackgroundScheduler
@@ -10,26 +10,17 @@ from apscheduler.triggers.cron import CronTrigger
 import datetime
 import time
 
-# 関数をまとめる
-def score_schedule_execute(id):
-    start = time.time()
-    scraping_get = ShapingRaceData(id)
-    predict_get = PredictRace()
-    # race_id = 202209050102
-    
-    predict_get.model_add(scraping_get.data_shaping(), id)
-    end = time.time()
-    print(end - start)
+scraping_data = ScrapingData()
 
 # １日の最初に実行 １日のレースを取ってくる
 def date_farst_execute():
     start = time.time()
-    shaping = ShapingRaceData()
-    data_id_minute = shaping.date_races_shaping()
+    data_id_minute = scraping_data.day_races_get()
     RacesTimeModel.objects.all().delete()
 
     # RaceTimeClassにデータ追加
     if data_id_minute:
+        print('OK')
 
         for i in range(len(data_id_minute)):
             add_id_time = RacesTimeModel(race_id = data_id_minute[i][0],
@@ -38,7 +29,16 @@ def date_farst_execute():
 
     end = time.time()
     print(end - start)
-    # print(data_id_minute)
+
+# レースの予測
+def score_schedule_execute(id):
+    start = time.time()
+    scraping_get = scraping_data.one_race_get(id)
+    predict_get = PredictRace()
+    
+    predict_get.model_add(scraping_get, id)
+    end = time.time()
+    print(end - start)
 
 # 定期実行処理
 def start():
@@ -77,21 +77,24 @@ def start():
         print('update')
         try:
             print(cnt)
-            print(type(cnt))
             race_id = id_time_model[cnt].race_id
             score_schedule_execute(race_id)
             scheduler.modify_job('test', args=[cnt+1])
             print('count')
+            print('---------')
         except:
             scheduler.modify_job('test', args=[cnt+1])
             print('next')
+            print('---------')
 
-    
-    scheduler.add_job(date_farst_execute, 'cron', hour=10, minute=11, max_instances=1)
-    # scheduler.add_job(score_schedule_execute, 'cron', minute=32, id='schedule_predict', max_instances=5)
-    scheduler.add_job(id_update, 'cron', day=30, args=[0], id='schedule_predict', max_instances=5)
-    scheduler.add_job(day_schedule_time_apdate, 'cron', hour=9, minute=52, max_instances=1)
-    scheduler.add_job(test, 'interval', minutes=2, args=[22], jitter=60, id='test', max_instances=5)
+    # 本番↓
+    scheduler.add_job(date_farst_execute, 'cron', hour=10, minute=0, max_instances=1)
+    scheduler.add_job(id_update, 'cron', day=30, args=[0], id='schedule_predict', max_instances=5) # 変更前提 基本実行されない
+    scheduler.add_job(day_schedule_time_apdate, 'cron', hour=8, minute=30, max_instances=1)
+
+    # テスト↓
+    # scheduler.add_job(date_farst_execute, 'cron', minute=31, max_instances=1)
+    scheduler.add_job(test, 'interval', minutes=1, args=[0], jitter=60, id='test', max_instances=5)
     # scheduler.add_job(test, 'cron', minute=1, args=[22], jitter=60, id='test', max_instances=5)
     # scheduler.add_job(score_schedule_execute, 'cron', minute=57, args=[202209050102], max_instances=1)
     

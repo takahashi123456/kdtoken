@@ -12,19 +12,21 @@ import requests
 import pandas as pd
 import numpy as np
 
+class ScrapingData:
 
-class RaceScraping:
+    # １日のレース
+    def day_races_get(self):
+        races_data = DayRaces().shaping()
+        return races_data
 
-    def __init__(self, id=None):
-        # 設定
-        self.id = str(id)
+    # １つのレース
+    def one_race_get(self, id=None):
+        race_data = OneRace(id).shaping()
+        return race_data
 
-        self.year = self.id[:4]
-        self.keibajyou = self.id[4:6]
-        self.kai = self.id[6:8]
-        self.nichime = self.id[8:10]
-        self.race = self.id[10:]
-        
+
+class Base:
+
     def scraping_base(self):
         # seleniumの設定
         options = webdriver.ChromeOptions()
@@ -34,10 +36,32 @@ class RaceScraping:
         self.driver = webdriver.Chrome('chromedriver',options=options)
         self.driver.implicitly_wait(10)
 
-    # １日のレースデータ
-    def date_races_list(self):
-        print('start')
+    def shaping_base(self):
+        # 競馬場情報
+        self.keibajyou_dict = {
+            "札幌":'01' ,"函館":'02' ,"福島":'03',
+            "新潟":'04' ,"東京":'05' ,"中山":'06',
+            "中京":'07' ,"京都":'08' ,"阪神":'09',
+            "小倉":'10'
+            }
+        
+        self.wether = {'晴':'sunny', '曇':'cloudy','雨': 'rain', '小雨':'light rain', '雪':'snowy', '小雪':'light snowy'}
+        self.track_condition = {'良':'firm', '稍':'good', '重':'soft', '不良':'heavy'}
+        self.racecourse_list = {
+            '01':'Sapporo', '02':'Hakodate', '03':'Fukushima',
+            '04':'Niigata', '05':'Tokyo', '06':'Nakayama',
+            '07':'Chukyo', '08':'Kyoto', '09':'Hanshin',
+            '10':'Kokura'}
+
+
+class DayRaces(Base):
+    def __init__(self):
         self.scraping_base()
+        self.shaping_base()
+
+    # １日のレースデータのスクレイピング
+    def scraping(self):
+        print('start')
 
         date_now = str(datetime.date.today())
         date_now = date_now.split('-')
@@ -45,8 +69,8 @@ class RaceScraping:
         year = date_now[0]
         # month = date_now[1]
         # day = date_now[2]
-        month = '11'
-        day = '27'
+        month = '12'
+        day = '03'
         url = "https://race.netkeiba.com/top/race_list.html?kaisai_date=" + year + month + day
 
         # urlから取得
@@ -59,45 +83,9 @@ class RaceScraping:
 
         return year, html
 
-    # レース単位
-    def race_data_scraping(self):
-        print('start')  # 動作確認用
-
-        self.scraping_base()
-
-        url = 'https://race.netkeiba.com/race/shutuba.html?race_id=' +  self.id
-        print(url)
-        soup = BeautifulSoup(requests.get(url).content, 'lxml')
-        span =  soup.select_one('#page > div.RaceColumn01 > div > div.RaceMainColumn > div.RaceList_NameBox > div.RaceList_Item02 > div.RaceData01').get_text().strip()
-        self.race_data = [[j.strip() for j in i.split(':', 1)] for i in span.split('/')]
-        self.driver.get(url)
-        html = self.driver.page_source.encode('utf-8')
-
-        #　ドライバーを終了
-        self.driver.quit()
-
-        return html
-
-
-class ShapingRaceData(RaceScraping):
-
-    def base_shaping(self):
-        # 競馬場情報
-        self.keibajyou_dict = {
-            "札幌":'01' ,"函館":'02' ,"福島":'03',
-            "新潟":'04' ,"東京":'05' ,"中山":'06',
-            "中京":'07' ,"京都":'08' ,"阪神":'09',
-            "小倉":'10'
-            }
-        
-        self.wether = {'晴':'sunny', '曇':'cloudy','雨': 'rain', '小雨':'light rain', '雪':'snowy', '小雪':'light snowy'}
-        self.track_condition = {'良':'firm', '稍':'good', '重':'soft', '不良':'heavy'}
-        self.racecourse_list = {'01':'Sapporo', '02':'Hakodate', '03':'Fukushima', '04':'Niigata', '05':'Tokyo', '06':'Nakayama', '07':'Chukyo', '08':'Kyoto', '09':'Hanshin', '10':'Kokura'}
-
     # １日のレースデータ整形
-    def date_races_shaping(self):
-        year, html = super().date_races_list()
-        self.base_shaping()
+    def shaping(self):
+        year, html = self.scraping()
         data_list = []
 
         # データがある時とない時の処理
@@ -125,11 +113,47 @@ class ShapingRaceData(RaceScraping):
             return sorted(data_list, key = lambda x: x[1])
         except:
             return False
+
+    def races_data_get(self):
+        self.shaping()
+
+
+# レース単位
+class OneRace(Base):
+
+    def __init__(self, id=None):
+        self.scraping_base()
+        self.shaping_base()
+
+        # 設定
+        self.id = str(id)
+
+        self.year = self.id[:4]
+        self.keibajyou = self.id[4:6]
+        self.kai = self.id[6:8]
+        self.nichime = self.id[8:10]
+        self.race = self.id[10:]
+
+    # レース単位でのスクレイピング
+    def scraping(self):
+        print('start')  # 動作確認用
+
+        url = 'https://race.netkeiba.com/race/shutuba.html?race_id=' +  self.id
+        print(url)
+        soup = BeautifulSoup(requests.get(url).content, 'lxml')
+        span =  soup.select_one('#page > div.RaceColumn01 > div > div.RaceMainColumn > div.RaceList_NameBox > div.RaceList_Item02 > div.RaceData01').get_text().strip()
+        self.race_data = [[j.strip() for j in i.split(':', 1)] for i in span.split('/')]
+        self.driver.get(url)
+        html = self.driver.page_source.encode('utf-8')
+
+        #　ドライバーを終了
+        self.driver.quit()
+
+        return html
     
     # レース単位データ整形
-    def data_shaping(self):
-        html = super().race_data_scraping()
-        self.base_shaping()
+    def shaping(self):
+        html = self.scraping()
 
         def change_en(value_data):
             return  translator.translate(value_data).text
@@ -154,7 +178,6 @@ class ShapingRaceData(RaceScraping):
             except:
                 return 0
             return horce_weight
-            # return int(str(value_data[value_data.find('('):]).replace("(","").replace(")",""))
 
         def trainer(value_data):
             if value_data[:2] == '栗東':
@@ -209,7 +232,8 @@ class ShapingRaceData(RaceScraping):
             'turn','wether',
             'track_condition'])
 
-        # data_list.to_csv('[PATHを指定]' + str(self.year) + str(self.keibajyou_list[self.keibajyou]) + str(self.kai_list[self.kai]) + str(self.nichime_list[self.nichime]) + str(self.race_list[race]) + '.csv')
-        # print(data_list)
         return data_list
+
+
+
 
