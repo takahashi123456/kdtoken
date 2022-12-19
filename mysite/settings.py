@@ -23,7 +23,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'l!sewbbkutyqh%1z^53ho!go%u$_-09+t@kcz-mts!d5zunpyf'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -135,6 +136,7 @@ REST_FRAMEWORK = {
 CORS_ORIGIN_WHITELIST = [
     # 'http://192.168.1.222:3000',
     'http://localhost:3000',
+    'https://kdtoken-takahashi123456.vercel.app/',
 ]
 # レスポンスを公開する
 CORS_ALLOW_CREDENTIALS = True
