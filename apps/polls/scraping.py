@@ -24,7 +24,7 @@ class ScrapingData:
         race_data = OneRace(id).shaping()
         return race_data
 
-
+# 共通の設定
 class Base:
 
     def scraping_base(self):
@@ -54,6 +54,7 @@ class Base:
             '10':'Kokura'}
 
 
+# １日のレースデータ
 class DayRaces(Base):
     def __init__(self):
         self.scraping_base()
@@ -235,5 +236,7 @@ class OneRace(Base):
         return data_list
 
 
-
+# レース結果
+class Result(Base):
+    pass
 

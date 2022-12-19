@@ -88,13 +88,13 @@ def start():
             print('---------')
 
     # 本番↓
-    scheduler.add_job(date_farst_execute, 'cron', hour=10, minute=0, max_instances=1)
-    scheduler.add_job(id_update, 'cron', day=30, args=[0], id='schedule_predict', max_instances=5) # 変更前提 基本実行されない
+    scheduler.add_job(date_farst_execute, 'cron', hour=8, minute=0, max_instances=1)
+    scheduler.add_job(id_update, 'cron', year=2022, month=12, day=19, args=[0], id='schedule_predict', max_instances=5) # 変更前提 基本実行されない
     scheduler.add_job(day_schedule_time_apdate, 'cron', hour=8, minute=30, max_instances=1)
 
     # テスト↓
     # scheduler.add_job(date_farst_execute, 'cron', minute=31, max_instances=1)
-    scheduler.add_job(test, 'interval', minutes=1, args=[0], jitter=60, id='test', max_instances=5)
+    # scheduler.add_job(test, 'interval', minutes=1, args=[0], jitter=60, id='test', max_instances=5)
     # scheduler.add_job(test, 'cron', minute=1, args=[22], jitter=60, id='test', max_instances=5)
     # scheduler.add_job(score_schedule_execute, 'cron', minute=57, args=[202209050102], max_instances=1)
     

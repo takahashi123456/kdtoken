@@ -28,7 +28,10 @@ class PredictRace:
         result['DeviationValue'] = result['score'].map(lambda x: round((x - score_mean) / score_std * 10 + 50, 2))
 
         merge = pd.merge(race_data, result['DeviationValue'], right_index=True, left_index=True)
-        merge.to_csv('/Users/nagatadaiki/Dropbox/My Mac (永田のMacBook Air)/Desktop/csv_data/' + str(id) + '.csv')
+        # merge.to_csv('/Users/nagatadaiki/Dropbox/My Mac (永田のMacBook Air)/Desktop/csv_data/' + str(id) + '.csv')
+        csv_path = os.path.dirname(os.path.abspath(__file__)) + '/predict_csv/'
+        os.makedirs(csv_path, exist_ok=True)
+        merge.to_csv(csv_path + str(id) + '.csv') # 作成途中
         # merge.to_csv()
         # merge.to_json()
 
