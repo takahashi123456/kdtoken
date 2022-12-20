@@ -136,7 +136,7 @@ REST_FRAMEWORK = {
 CORS_ORIGIN_WHITELIST = [
     # 'http://192.168.1.222:3000',
     'http://localhost:3000',
-    'https://kdtoken-takahashi123456.vercel.app/',
+    'https://kdtoken-takahashi123456.vercel.app',
 ]
 # レスポンスを公開する
 CORS_ALLOW_CREDENTIALS = True
