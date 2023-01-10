@@ -68,10 +68,10 @@ class DayRaces(Base):
         date_now = date_now.split('-')
 
         year = date_now[0]
-        # month = date_now[1]
-        # day = date_now[2]
-        month = '12'
-        day = '03'
+        month = date_now[1]
+        day = date_now[2]
+        # month = '12'
+        # day = '03'
         url = "https://race.netkeiba.com/top/race_list.html?kaisai_date=" + year + month + day
 
         # urlから取得
