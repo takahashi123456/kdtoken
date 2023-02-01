@@ -6,7 +6,7 @@ import Container from '@mui/material/Container';
 
 
 const sections = [
-    { title: '過去の予想', url: '/list' },
+    { title: '今週の予想', url: '/list' },
     { title: '最強馬レート', url: '/rate' },
     { title: 'モデル別回収率一覧', url: '#' },
     { title: 'お知らせ', url: '#' },
